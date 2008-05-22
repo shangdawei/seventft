@@ -40,9 +40,7 @@
    <animation effect="fade" time="200">VisibleChange</animation>
   </control>
 
-  <control>
-   <type>multiimage</type>
-   <id>0</id>
+  <control type="multiimage">
    <posx>65</posx>
    <posy>82</posy>
    <width>588</width>
@@ -50,7 +48,7 @@
    <imagepath>16x9home-mymusic</imagepath>
    <timeperimage>5000</timeperimage>
    <fadetime>2000</fadetime>
-   <visible>!Player.HasMedia | Skin.HasSetting(HomeViewToggle)</visible>
+  <visible>!Player.HasMedia | Skin.HasSetting(HomeViewToggle)</visible>
    <visible>ControlGroup(1).HasFocus(3)</visible>
    <animation effect="fade" time="200">VisibleChange</animation>
   </control>
@@ -1053,12 +1051,7 @@
 
 
 
- 
-
-  <controlgroup id="1">
-
-
-   <control> 
+ <control> 
       <description>Weather conditions</description> 
       <type>image</type> 
       <id>556</id> 
@@ -1082,6 +1075,11 @@
       <align>left</align>
       <visible effect="fade" time="2200">!Player.HasAudio | ![Player.HasAudio + System.IdleTime(8)]</visible>
     </control>
+	
+  <control type="group" id="1">
+
+
+   
 
 
 
@@ -1586,7 +1584,7 @@
          </control>
   
 
-  </controlgroup>
+  </control>
 
  <!-- labels -->
 
