@@ -1056,7 +1056,7 @@
 
  
 
-  <controlgroup id="1">
+  <control type="group" id="1">
 
 
    <control> 
@@ -1581,6 +1581,8 @@
 
 
 <control>
+
+
    <description>recording label</description>
    <type>image</type>
    <id>0</id>
@@ -1593,7 +1595,7 @@
          </control>
   
 
-  </controlgroup>
+  </control>
 
  <!-- labels -->
 
