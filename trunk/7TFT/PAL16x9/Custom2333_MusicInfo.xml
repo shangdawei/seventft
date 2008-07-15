@@ -20,8 +20,8 @@
 			<width>720</width>
 			<height>576</height>
 			<texture>bg_dialog.png</texture>
-			<animation effect="rotatey" center="1" start="180" end="360" time="800" loop="false" acceleration="0.3" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
-			<animation effect="rotatey" center="1" start="360" end="180" time="800" loop="false" acceleration="0.4" condition="!Skin.HasSetting(animated)">WindowClose</animation>
+			<animation effect="rotatey" center="1" start="180" end="360" time="700" loop="false" acceleration="0.3" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
+			<animation effect="rotatey" center="1" start="360" end="180" time="600" loop="false" acceleration="0.4" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 		</control>
 		<control type="image" id="0">
 			<description>contentpanel slice music background Music</description>
@@ -34,8 +34,8 @@
 			<info>Skin.String(MusicBackground)</info>
 			<visible>Skin.HasSetting(MusicBackground)</visible>
 			<visible>![!IsEmpty(Fanart.Image) + Skin.HasSetting(ShowFanart)]</visible>
-			<animation effect="rotatey" center="1" start="180" end="360" time="800" loop="false" acceleration="0.3" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
-			<animation effect="rotatey" center="1" start="360" end="180" time="800" loop="false" acceleration="0.4" condition="!Skin.HasSetting(animated)">WindowClose</animation>
+			<animation effect="rotatey" center="1" start="180" end="360" time="700" loop="false" acceleration="0.3" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
+			<animation effect="rotatey" center="1" start="360" end="180" time="600" loop="false" acceleration="0.4" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 		</control>
 		<!-- <include>MusicBackground</include> -->
 		<!-- <control>
