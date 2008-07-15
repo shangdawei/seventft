@@ -1,34 +1,32 @@
 <window type="buttonMenu" id="111">
 	<defaultcontrol always="true">3112</defaultcontrol>
 	<coordinates>
-  <system>1</system>
-  <posx>175</posx>
-  <posy>230</posy>
- </coordinates>
+		<system>1</system>
+		<posx>175</posx>
+		<posy>230</posy>
+	</coordinates>
 	<controls>
-		
 		<control>
-   <type>image</type>
-   <posx>-200</posx>
-   <posy>-230</posy>
-   <width>735</width>
-   <height>576</height>
-   <texture>black.png</texture>
-   <animation effect="fade" time="2000" delay="150">WindowOpen</animation>
-   <animation effect="fade" time="700" delay="150">WindowClose</animation>
-  </control>
-<control>
-   <type>image</type>
-   <posx>-190</posx>
-   <posy>-230</posy>
-   <width>750</width>
-   <height>576</height>
-   <texture>bg_shotdownmenue.png</texture>
-   <include>shutdownmenu</include>
-  </control>
+			<type>image</type>
+			<posx>-200</posx>
+			<posy>-230</posy>
+			<width>735</width>
+			<height>576</height>
+			<texture>black.png</texture>
+			<animation effect="fade" time="2000" delay="150">WindowOpen</animation>
+			<animation effect="fade" time="700" delay="150">WindowClose</animation>
+		</control>
+		<control>
+			<type>image</type>
+			<posx>-190</posx>
+			<posy>-230</posy>
+			<width>750</width>
+			<height>576</height>
+			<texture>bg_shotdownmenue.png</texture>
+			<include>shutdownmenu</include>
+		</control>
 		<control type="group" id="9000">
-	<!--- No Logon Yes Lock 			------------------------------->
-
+			<!-- No Logon Yes Lock -->
 			<control type="togglebutton" id="3116">
 				<description>Master mode button</description>
 				<visible>System.LoggedOn + System.HasLocks + !System.HasLoginScreen</visible>
@@ -285,29 +283,27 @@
 				<include>shutdownmenu</include>
 			</control>
 			<control type="togglebutton" id="4001">
-      <description>Eject button</description>
-    <visible>System.LoggedOn + System.HasLocks + !System.HasLoginScreen</visible>
-      				<include>shutdownmenu</include>
-      				<posx>390</posx>
+				<description>Eject button</description>
+				<visible>System.LoggedOn + System.HasLocks + !System.HasLoginScreen</visible>
+				<include>shutdownmenu</include>
+				<posx>390</posx>
 				<posy>5</posy>
 				<width>60</width>
 				<height>79</height>
-      <texturefocus>sub-eject-focus.png</texturefocus>
-      <texturenofocus>sub-eject-nofocus.png</texturenofocus>
-      <usealttexture>System.TrayOpen</usealttexture>
-      <alttexturefocus>sub-ejected-focus.png</alttexturefocus>
-      <alttexturenofocus>sub-ejected-nofocus.png</alttexturenofocus>
-      <onclick>XBMC.EjectTray()</onclick>
-      <onleft>4000</onleft>
-      <onright>3116</onright>
-      <onup>3112</onup>
-      <ondown>3110</ondown>
-      <font>-</font>
-      <label>13391</label>
-    </control>
-
-		<!--- No Logon no Lock 			---------------------------------------------------------->
-
+				<texturefocus>sub-eject-focus.png</texturefocus>
+				<texturenofocus>sub-eject-nofocus.png</texturenofocus>
+				<usealttexture>System.TrayOpen</usealttexture>
+				<alttexturefocus>sub-ejected-focus.png</alttexturefocus>
+				<alttexturenofocus>sub-ejected-nofocus.png</alttexturenofocus>
+				<onclick>XBMC.EjectTray()</onclick>
+				<onleft>4000</onleft>
+				<onright>3116</onright>
+				<onup>3112</onup>
+				<ondown>3110</ondown>
+				<font>-</font>
+				<label>13391</label>
+			</control>
+			<!-- No Logon no Lock -->
 			<control type="button" id="3113">
 				<description>System Info button</description>
 				<visible>System.LoggedOn + !System.HasLocks + !System.HasLoginScreen</visible>
@@ -540,30 +536,28 @@
 				<label>13006</label>
 				<include>shutdownmenu</include>
 			</control>
-                        <control type="togglebutton" id="4001">
-      <description>Eject button</description>
-    <visible>System.LoggedOn + !System.HasLocks + !System.HasLoginScreen</visible>
-      				<include>shutdownmenu</include>
-      				<posx>340</posx>
+			<control type="togglebutton" id="4001">
+				<description>Eject button</description>
+				<visible>System.LoggedOn + !System.HasLocks + !System.HasLoginScreen</visible>
+				<include>shutdownmenu</include>
+				<posx>340</posx>
 				<posy>5</posy>
 				<width>60</width>
 				<height>79</height>
-      <texturefocus>sub-eject-focus.png</texturefocus>
-      <texturenofocus>sub-eject-nofocus.png</texturenofocus>
-      <usealttexture>System.TrayOpen</usealttexture>
-      <alttexturefocus>sub-ejected-focus.png</alttexturefocus>
-      <alttexturenofocus>sub-ejected-nofocus.png</alttexturenofocus>
-      <onclick>XBMC.EjectTray()</onclick>
-      <onleft>4000</onleft>
-      <onright>3113</onright>
-      <onup>3112</onup>
-      <ondown>3110</ondown>
-      <font>-</font>
-      <label>13391</label>
-    </control>
-	
-	<!-- Yes Logon No Locks -		------------------------------------------------------------------>
-
+				<texturefocus>sub-eject-focus.png</texturefocus>
+				<texturenofocus>sub-eject-nofocus.png</texturenofocus>
+				<usealttexture>System.TrayOpen</usealttexture>
+				<alttexturefocus>sub-ejected-focus.png</alttexturefocus>
+				<alttexturenofocus>sub-ejected-nofocus.png</alttexturenofocus>
+				<onclick>XBMC.EjectTray()</onclick>
+				<onleft>4000</onleft>
+				<onright>3113</onright>
+				<onup>3112</onup>
+				<ondown>3110</ondown>
+				<font>-</font>
+				<label>13391</label>
+			</control>
+			<!-- Yes Logon No Locks -->
 			<control type="button" id="3113">
 				<description>System Info button</description>
 				<visible>System.LoggedOn + !System.HasLocks + System.HasLoginScreen</visible>
@@ -817,32 +811,28 @@
 				<include>shutdownmenu</include>
 			</control>
 			<control type="togglebutton" id="4001">
-      <description>Eject button</description>
-    <visible>System.LoggedOn + !System.HasLocks + System.HasLoginScreen</visible>
-      				<include>shutdownmenu</include>
-      				<posx>390</posx>
+				<description>Eject button</description>
+				<visible>System.LoggedOn + !System.HasLocks + System.HasLoginScreen</visible>
+				<include>shutdownmenu</include>
+				<posx>390</posx>
 				<posy>5</posy>
 				<width>60</width>
 				<height>79</height>
-      <texturefocus>sub-eject-focus.png</texturefocus>
-      <texturenofocus>sub-eject-nofocus.png</texturenofocus>
-      <usealttexture>System.TrayOpen</usealttexture>
-      <alttexturefocus>sub-ejected-focus.png</alttexturefocus>
-      <alttexturenofocus>sub-ejected-nofocus.png</alttexturenofocus>
-      <onclick>XBMC.EjectTray()</onclick>
-      <onleft>4000</onleft>
-      <onright>3113</onright>
-      <onup>3112</onup>
-      <ondown>3110</ondown>
-      <font>-</font>
-      <label>13391</label>
-    </control>
-
-
-
-
-	<!--- Yes Logon Yes Locks -		
-			<control type="image">
+				<texturefocus>sub-eject-focus.png</texturefocus>
+				<texturenofocus>sub-eject-nofocus.png</texturenofocus>
+				<usealttexture>System.TrayOpen</usealttexture>
+				<alttexturefocus>sub-ejected-focus.png</alttexturefocus>
+				<alttexturenofocus>sub-ejected-nofocus.png</alttexturenofocus>
+				<onclick>XBMC.EjectTray()</onclick>
+				<onleft>4000</onleft>
+				<onright>3113</onright>
+				<onup>3112</onup>
+				<ondown>3110</ondown>
+				<font>-</font>
+				<label>13391</label>
+			</control>
+			<!-- Yes Logon Yes Locks -->
+			<!-- <control type="image">
 				<description>Shutdown focus image</description>
 				<posx>-91</posx>
 				<posy>4</posy>
@@ -852,8 +842,7 @@
 				<include>shutdownmenu</include>
 				<visible>System.LoggedOn + System.HasLocks + System.HasLoginScreen</visible>
 				<visible>[Control.HasFocus(3118)]</visible>
-			</control>						------------------------------------------->
-			
+			</control> -->
 			<control type="togglebutton" id="3118">
 				<description>Master mode button</description>
 				<visible>System.LoggedOn + System.HasLocks + System.HasLoginScreen</visible>
@@ -877,10 +866,7 @@
 				<font>-</font>
 				<include>shutdownmenu</include>
 			</control>
-
-
-			
-		<!---	<control type="image">
+			<!-- <control type="image">
 				<description>Shutdown focus image</description>
 				<posx>-120</posx>
 				<posy>-5</posy>
@@ -890,10 +876,7 @@
 				<include>shutdownmenu</include>
 				<visible>System.LoggedOn + System.HasLocks + System.HasLoginScreen</visible>
 				<visible>[Control.HasFocus(3118)]</visible>
-			</control>  ----------------------------->
-			
-			
-
+			</control> -->
 			<control type="button" id="3113">
 				<description>System Info button</description>
 				<visible>System.LoggedOn + System.HasLocks + System.HasLoginScreen</visible>
@@ -913,13 +896,8 @@
 				<label>130</label>
 				<include>shutdownmenu</include>
 			</control>
-<! ---------  kreis beispiel --------------------------------------------------------------------->
-			
-
-
-
-
-<! ---------  kreis beispiel --------------------------------------------------------------------->			
+			<!-- kreis beispiel
+kreis beispiel -->
 			<control type="button" id="3117">
 				<description>Profile LogOff</description>
 				<visible>System.LoggedOn + System.HasLocks + System.HasLoginScreen</visible>
@@ -1154,31 +1132,28 @@
 				<include>shutdownmenu</include>
 			</control>
 			<control type="togglebutton" id="4001">
-      <description>Eject button</description>
-    <visible>System.LoggedOn + System.HasLocks + System.HasLoginScreen</visible>
-      				<include>shutdownmenu</include>
-     		                <posx>420</posx>
+				<description>Eject button</description>
+				<visible>System.LoggedOn + System.HasLocks + System.HasLoginScreen</visible>
+				<include>shutdownmenu</include>
+				<posx>420</posx>
 				<posy>5</posy>
 				<width>60</width>
 				<height>79</height>
-      <texturefocus>sub-eject-focus.png</texturefocus>
-      <texturenofocus>sub-eject-nofocus.png</texturenofocus>
-      <usealttexture>System.TrayOpen</usealttexture>
-      <alttexturefocus>sub-ejected-focus.png</alttexturefocus>
-      <alttexturenofocus>sub-ejected-nofocus.png</alttexturenofocus>
-      <onclick>XBMC.EjectTray()</onclick>
-      <onleft>4000</onleft>
-      <onright>3118</onright>
-      <onup>3112</onup>
-      <ondown>3110</ondown>
-      <font>-</font>
-      <label>13391</label>
-    </control>
-
-
-
-		<!--- sub-overlay-focus.png    on focus Button------------------------
-			<control type="image">
+				<texturefocus>sub-eject-focus.png</texturefocus>
+				<texturenofocus>sub-eject-nofocus.png</texturenofocus>
+				<usealttexture>System.TrayOpen</usealttexture>
+				<alttexturefocus>sub-ejected-focus.png</alttexturefocus>
+				<alttexturenofocus>sub-ejected-nofocus.png</alttexturenofocus>
+				<onclick>XBMC.EjectTray()</onclick>
+				<onleft>4000</onleft>
+				<onright>3118</onright>
+				<onup>3112</onup>
+				<ondown>3110</ondown>
+				<font>-</font>
+				<label>13391</label>
+			</control>
+			<!-- sub-overlay-focus.png    on focus Button
+		 <control type="image">
 				<description>System Info button</description>
 				<posx>50</posx>
 				<posy>-5</posy>
@@ -1197,12 +1172,8 @@
 				<texture>sub-overlay-focus.png</texture>
 				<include>shutdownmenu</include>
 				<visible>[Control.HasFocus(4001)]</visible>
-			</control>						-------->
-
-
-
-		<!--- Logon Screen 			--------hier besonders aufpassen----------------------------------->
-			
+			</control> -->
+			<!-- Logon Screen////hier besonders aufpassen -->
 			<control type="button" id="3112">
 				<description>Shutdown button</description>
 				<visible>!System.Loggedon</visible>
@@ -1274,7 +1245,7 @@
 				<visible>!System.LoggedOn</visible>
 				<visible>[Control.HasFocus(3114) | Control.HasFocus(3115)]</visible>
 			</control>
-                        <control type="button" id="4000">
+			<control type="button" id="4000">
 				<description>Dashboard button</description>
 				<visible>!System.Loggedon</visible>
 				<posx>340</posx>
@@ -1295,7 +1266,7 @@
 				<include>shutdownmenu</include>
 			</control>
 		</control>
-			<control type="image" id="0">
+		<control type="image" id="0">
 			<posx>-103</posx>
 			<posy>-10</posy>
 			<width>576</width>
@@ -1344,7 +1315,7 @@
 			<height>20</height>
 			<align>center</align>
 			<aligny>center</aligny>
-			<font>idua20</font>			
+			<font>idua20</font>
 			<include>shutdownmenu</include>
 		</control>
 	</controls>

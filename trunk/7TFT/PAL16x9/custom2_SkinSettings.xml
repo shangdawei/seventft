@@ -393,20 +393,19 @@
 					<font>idua18</font>
 				</control>
 				<control type="radiobutton" id="43">
-				<description>Enable Scroll Bars</description>
-				<width>485</width>
-				<height>30</height>
-				<texturefocus>list-focus.png</texturefocus>
-					<texturenofocus>-</texturenofocus>				
-				<selected>Skin.HasSetting(ScrollBars)</selected>
-				<onclick>Skin.ToggleSetting(ScrollBars)</onclick>
-				<label>enable Scroll Bar</label>
-				<font>WindowTextFont</font>
-				<textcolor>WindowText</textcolor>
-				<focusedcolor>WindowFocusText</focusedcolor>
-				<font>idua18</font>
-				
-			</control>
+					<description>Enable Scroll Bars</description>
+					<width>485</width>
+					<height>30</height>
+					<texturefocus>list-focus.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<selected>Skin.HasSetting(ScrollBars)</selected>
+					<onclick>Skin.ToggleSetting(ScrollBars)</onclick>
+					<label>enable Scroll Bar</label>
+					<font>WindowTextFont</font>
+					<textcolor>WindowText</textcolor>
+					<focusedcolor>WindowFocusText</focusedcolor>
+					<font>idua18</font>
+				</control>
 			</control>
 			<!-- Background Options -->
 			<control type="group" id="9006">
@@ -649,7 +648,7 @@
 					<info>Skin.String(ProgramsBackground)</info>
 					<enable>Skin.HasSetting(ProgramsBackground)</enable>
 				</control>
-				<!--custom  Picture Backgrund-->				
+				<!--custom  Picture Backgrund-->
 				<control type="radiobutton" id="1060">
 					<description>Enable Custom Background Toggle</description>
 					<posx>180</posx>
