@@ -21,90 +21,60 @@
 			<texture>bg_AlbumVideoInfo.png</texture>
 		</control>
 		<include>MusicBackground</include>
-
-
-
 		<control type="image">
 			<description>Artist,Album Cover image background</description>
 			<posx>40</posx>
 			<posy>114</posy>
 			<width>154</width>
-			<height>216</height>			
+			<height>216</height>
 			<!-- <texture>blackblack3.png</texture> -->
 			<texture>bg_ListItem.property_artistthumb.png</texture>
 			<!-- <colordiffuse>98ffffff</colordiffuse> -->
 			<aspectratio align="center" aligny="center">keep</aspectratio>
-		</control>	
+		</control>
 		<control type="image">
 			<description>Artist,Album Cover image</description>
-			<posx>57</posx>			
-			<posy>114</posy> 
+			<posx>57</posx>
+			<posy>114</posy>
 			<width>120</width>
-			<height>215</height>			
+			<height>215</height>
 			<aspectratio align="center" aligny="center">keep</aspectratio>
-			<!-- <aspectratio aligny="top">keep</aspectratio> -->				
-			<info>ListItem.Thumb</info>		
-		</control> 		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			<!-- <aspectratio aligny="top">keep</aspectratio> -->
+			<info>ListItem.Thumb</info>
+		</control>
 		<control type="image">
 			<description>Artist cover background</description>
-			<posx>68</posx>			
-			<posy>343</posy> 
+			<posx>68</posx>
+			<posy>343</posy>
 			<width>104</width>
-			<height>124</height>	
-			<aspectratio align="center" aligny="center">keep</aspectratio>			
+			<height>124</height>
+			<aspectratio align="center" aligny="center">keep</aspectratio>
 			<!-- <aspectratio aligny="top">keep</aspectratio>  -->
 			<!-- <info>ListItem.Thumb</info> -->
-			<texture>bg_ListItem.property_artistthumb.png</texture>		
+			<texture>bg_ListItem.property_artistthumb.png</texture>
 			<!-- <visible>Control.IsVisible(668)</visible> -->
 			<!-- <visible>ListItem.property(artistthumb)</visible> -->
 			<!-- <visible>Image.IsVisible(666)</visible> -->
 			<!-- <visible>Container.HasThumb(artistthumb)</visible> -->
 			<!-- <visible>Skin.IsVisible(artistthumb)</visible> -->
 			<!-- <visible>ListItem.IsVisible(666)</visible> -->
-		</control> 
-		<control type="group" id="668">	
+		</control>
+		<control type="group" id="668">
 			<control type="image">
 				<description>Artist cover front</description>
-				<posx>90</posx>			
-				<posy>343</posy> 
+				<posx>90</posx>
+				<posy>343</posy>
 				<width>62</width>
-				<height>127</height>			
+				<height>127</height>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<!-- <aspectratio aligny="top">keep</aspectratio> -->
 				<!-- <info>ListItem.Thumb</info> -->
-				<info>ListItem.property(artistthumb)</info>		
+				<info>ListItem.property(artistthumb)</info>
 				<!-- <info>ListItem.Album</info> -->
-				<!-- <visible>!IsEmpty(ListItem.Album)</visible> --> 
+				<!-- <visible>!IsEmpty(ListItem.Album)</visible> -->
 			</control>
 		</control>
-
-
-
-
-
-
-
-
-
-
-
-
 		<!-- 999999999999999999999999999999999999 -->
-
 		<control type="image">
 			<posx>115</posx>
 			<posy>330</posy>
@@ -119,7 +89,6 @@
 			<height>31</height>
 			<texture>folder-focus7.png</texture>
 		</control>
-
 		<control type="group">
 			<visible>container.content(albums)</visible>
 			<control type="label" id="1">
@@ -201,7 +170,7 @@
 				<width>100</width>
 				<label>21899</label>
 				<font>ArialSettings</font>
-				<textcolor>ff999999</textcolor>   
+				<textcolor>ff999999</textcolor>
 			</control>
 			<control type="label">
 				<description>Type</description>
@@ -304,13 +273,6 @@
 				<font>ArialSettings</font>
 				<scroll>true</scroll>
 			</control>
-
-
-
-
-
-
-
 			<!-- <control type="image" id="800">
 				<description>bg listcontrol and textarea fuer zoom funktion</description>
 				<posx>180</posx>
@@ -350,17 +312,10 @@
 				<onup>5</onup>
 				<ondown>5</ondown>
 				<visible>!Control.IsVisible(61) + !Control.IsVisible(50)</visible>
-				<include>autoscrollmedium</include> 
+				<include>autoscrollmedium</include>
 				<info>ListItem.Property(AlbumReview)</info>
 			</control>
 		</control>
-
-
-
-
-
-
-
 		<control type="group">
 			<visible>container.content(artists)</visible>
 			<control type="label">
@@ -372,7 +327,6 @@
 				<textcolor>98778899</textcolor>
 				<font>eth20</font>
 			</control>
-
 			<control type="label">
 				<description>Artist value</description>
 				<posx>170</posx>
@@ -384,7 +338,6 @@
 				<textcolor>ff778899</textcolor>
 				<scroll>true</scroll>
 			</control>
-
 			<control type="label">
 				<description>Artist Not Available value</description>
 				<posx>200</posx>
@@ -489,8 +442,6 @@
 				<font>ArialSettings</font>
 				<textcolor>ff999999</textcolor>
 			</control>
-
-
 			<control type="label">
 				<description>Born, Formed value</description>
 				<width>300</width>
@@ -563,11 +514,6 @@
 				<font>ArialSettings</font>
 				<scroll>true</scroll>
 			</control>
-
-
-
-
-
 			<!-- <control type="image" id="800">
 				<description>bg listcontrol and textarea fuer zoom funktion</description>
 				<posx>180</posx>
@@ -579,7 +525,6 @@
 				<animation effect="zoom" start="100" end="150" center="auto" time="50">visiblechange</animation>
 				<animation effect="zoom" start="150" end="100" center="auto" time="50">visiblechange</animation>
 			</control> -->
-
 			<control type="textbox" id="4">
 				<description>textarea</description>
 				<posx>166</posx>
@@ -595,13 +540,8 @@
 				<visible>!Control.IsVisible(50)</visible>
 				<include>autoscrollmedium</include>
 				<info>ListItem.Property(Biography)</info>
-			</control>			
+			</control>
 		</control>
-
-
-
-
-
 		<control type="group" id="9000">
 			<control type="button" id="5">
 				<description>Tracks/Review(Albums) or Discography/Biography(Artists)</description>
@@ -669,12 +609,6 @@
 				<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-0.8" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 				<animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 			</control>
-
-
-
-
-
-
 		</control>
 		<control type="list" id="50">
 			<description>Track List Container</description>
@@ -857,6 +791,3 @@
 		</control>
 	</controls>
 </window>
-
-
-		

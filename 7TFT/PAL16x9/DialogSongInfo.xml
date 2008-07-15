@@ -8,7 +8,6 @@
 		<posy>110</posy>
 	</coordinates>
 	<controls>
-		
 		<control type="image" id="1">
 			<description>background image</description>
 			<posx>-110</posx>
@@ -29,12 +28,11 @@
 			<visible>Skin.HasSetting(MusicBackground)</visible>
 			<visible>![!IsEmpty(Fanart.Image) + Skin.HasSetting(ShowFanart)]</visible>
 		</control>
-		
 		<control type="label">
 			<description>Dialog Title</description>
 			<posx>-72</posx>
-		    <posy>-93</posy>
- 		    <align>left</align>
+			<posy>-93</posy>
+			<align>left</align>
 			<width>460</width>
 			<font>eth24</font>
 			<label>658</label>
@@ -55,7 +53,7 @@
 			<posy>40</posy>
 			<width>400</width>
 			<font>idua20</font>
-                        <textcolor>ff111111</textcolor>
+			<textcolor>ff111111</textcolor>
 			<info>ListItem.Title</info>
 		</control>
 		<control type="fadelabel">
@@ -64,7 +62,7 @@
 			<posy>38</posy>
 			<width>400</width>
 			<font>idua20</font>
-                        <textcolor>987cfc00</textcolor>
+			<textcolor>987cfc00</textcolor>
 			<info>ListItem.Title</info>
 		</control>
 		<control type="label">
@@ -159,14 +157,14 @@
 			<height>20</height>
 			<info>ListItem.Rating</info>
 		</control>
-	<!----	<control type="label">
+		<!-- <control type="label">
 			<description>Comment</description>
 			<posx>10</posx>
 			<posy>220</posy>
 			<label>659</label>
 			<textcolor>ff777777</textcolor>
 			<font>idua20</font>
-		</control>				--->
+		</control> -->
 		<control type="textbox">
 			<description>Comment value</description>
 			<posx>10</posx>
@@ -192,7 +190,7 @@
 			<ondown>10</ondown>
 			<onup>10</onup>
 			<animation effect="zoom" start="100" end="140" center="auto" time="80">focus</animation>
-   <animation effect="zoom" start="140" end="100" center="auto" time="80">unfocus</animation>
+			<animation effect="zoom" start="140" end="100" center="auto" time="80">unfocus</animation>
 		</control>
 		<control type="button" id="15">
 			<description>Increase Rating</description>
@@ -208,9 +206,9 @@
 			<ondown>10</ondown>
 			<onup>10</onup>
 			<animation effect="zoom" start="100" end="140" center="auto" time="80">focus</animation>
-   <animation effect="zoom" start="140" end="100" center="auto" time="80">unfocus</animation>
+			<animation effect="zoom" start="140" end="100" center="auto" time="80">unfocus</animation>
 		</control>
-		<control type="button" id ="13">			
+		<control type="button" id ="13">
 			<description>Get Thumb button</description>
 			<posx>-60</posx>
 			<posy>399</posy>
@@ -274,35 +272,32 @@
 			<onup>14</onup>
 			<ondown>14</ondown>
 		</control>
-		
-		
 		<control type="image">
 			<description>Album Cover image</description>
 			<posx>319</posx>
 			<posy>130</posy>
 			<width>126</width>
 			<height>180</height>
-			<!-- <aspectratio aligny="bottom">keep</aspectratio> -->				
+			<!-- <aspectratio aligny="bottom">keep</aspectratio> -->
 			<info>ListItem.Icon</info>
 		</control>
-		
-	<!--	<control type="image">
+		<!-- <control type="image">
 			<description>Album Cover image</description>
 			<posx>315</posx>
 			<posy>295</posy>
 			<width>180</width>
 			<height>180</height>
-			<texture flipy="true" diffuse="diffuse_mirror.png" /> 
+			<texture flipy="true" diffuse="diffuse_mirror.png" />
 			<aspectratio aligny="bottom">keep</aspectratio>
 			<info>ListItem.Icon</info>
-		</control>   --->
+		</control> -->
 		<control type="image">
 			<description>black_bg image</description>
 			<posx>-110</posx>
 			<posy>-110</posy>
 			<width>720</width>
-			<height>576</height>							
-			<texture>blackblack2.png</texture>			
+			<height>576</height>
+			<texture>blackblack2.png</texture>
 			<animation effect="fade" time="490">VisibleChange</animation>
 			<visible>Control.HasFocus(50)</visible>
 		</control>
@@ -311,12 +306,12 @@
 			<posx>240</posx>
 			<posy>32</posy>
 			<width>236</width>
-			<height>342</height>						
-			<info>ListItem.Icon</info>			
+			<height>342</height>
+			<info>ListItem.Icon</info>
 			<animation effect="fade" time="70">Visible</animation>
 			<visible>Control.HasFocus(50)</visible>
 		</control>
-		<control type="button" id ="50">	
+		<control type="button" id ="50">
 			<description>Cover-CD image and zoom</description>
 			<posx>304</posx>
 			<posy>88</posy>
@@ -324,7 +319,7 @@
 			<height>307</height>
 			<label>-</label>
 			<font>-</font>
-			<!--<aspectratio aligny="bottom">keep</aspectratio>	--->		
+			<!-- <aspectratio aligny="bottom">keep</aspectratio> -->
 			<texturenofocus>cover-CD.png</texturenofocus>
 			<texturefocus>cover-CD.png</texturefocus>
 			<animation effect="zoom" start="100" end="188" center="auto" time="80">focus</animation>
@@ -334,76 +329,56 @@
 			<ondown>10</ondown>
 			<onup>10</onup>
 		</control>
-		
-	<!--	<control type="image">
+		<!-- <control type="image">
 			<description>Cover-CD image</description>
 			<posx>282</posx>
 			<posy>88</posy>
 			<width>298</width>
 			<height>307</height>
-			<texture flipy="true" diffuse="diffuse_mirror.png" /> 
+			<texture flipy="true" diffuse="diffuse_mirror.png" />
 			<aspectratio aligny="bottom">keep</aspectratio>
 			<texture>cover-CD.png</texture>
-		</control>  --->
-		
-    
-	<control type="multiimage">
-       <description>equalizer </description>
-		<posx>468</posx>
-    	<posy>-100</posy>
-		<width>120</width>
-		<height>44</height>
-		<imagepath>EQ</imagepath>
-		<timeperimage>50</timeperimage>
-		<randomize>true</randomize>
-		<fadetime>1</fadetime>		
-        <colordiffuse>95FFFFFFF</colordiffuse> 		
-		<animation effect="fade" time="100">VisibleChange</animation>
-	<visible>Player.HasAudio + !Player.Seeking + !Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
-			</control>
-			
+		</control> -->
+		<control type="multiimage">
+			<description>equalizer </description>
+			<posx>468</posx>
+			<posy>-100</posy>
+			<width>120</width>
+			<height>44</height>
+			<imagepath>EQ</imagepath>
+			<timeperimage>50</timeperimage>
+			<randomize>true</randomize>
+			<fadetime>1</fadetime>
+			<colordiffuse>95FFFFFFF</colordiffuse>
+			<animation effect="fade" time="100">VisibleChange</animation>
+			<visible>Player.HasAudio + !Player.Seeking + !Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
+		</control>
 		<!-- equlizer -->
-		
-		
-		
 		<control>
-   <description>Uhr label</description>
-   <type>label</type>
-   <id>0</id>
-   <posx>504</posx>
-   <posy>-94</posy>
-   <label>time</label>
-   <info>System.Time</info>
-   <align>left</align>
-    <font>home_red</font>
-   <textcolor>ff444444</textcolor>
-   <visible>!Player.Playing</visible>
-  </control>
-      	
-   <control>
-   <description>PartyMode Enabled</description>
-   <type>button</type>
-   <id>1</id>
-   <posx>662</posx>
-   <posy>78</posy>
-   <width>32</width>
-   <height>32</height>
-   <label>-</label>
-   <texturefocus>-</texturefocus>
-   <texturenofocus>partymodus.gif</texturenofocus>
-   <visible>MusicPartyMode.Enabled</visible>
-   </control>
-
+			<description>Uhr label</description>
+			<type>label</type>
+			<id>0</id>
+			<posx>504</posx>
+			<posy>-94</posy>
+			<label>time</label>
+			<info>System.Time</info>
+			<align>left</align>
+			<font>home_red</font>
+			<textcolor>ff444444</textcolor>
+			<visible>!Player.Playing</visible>
+		</control>
+		<control>
+			<description>PartyMode Enabled</description>
+			<type>button</type>
+			<id>1</id>
+			<posx>662</posx>
+			<posy>78</posy>
+			<width>32</width>
+			<height>32</height>
+			<label>-</label>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>partymodus.gif</texturenofocus>
+			<visible>MusicPartyMode.Enabled</visible>
+		</control>
 	</controls>
 </window>
-
-
-
-
-
-
-
-
-
-
-

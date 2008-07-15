@@ -9,7 +9,7 @@
      		 <texture>wide icon overlay.png</texture>
                  <visible>Control.HasFocus(59)</visible>
 		</control> -->
-	<!-- 	<control type="image" id="0">
+		<!-- 	<control type="image" id="0">
 			<description>contentpanel slice Custom background Music</description>
 			<posx>40</posx>
 			<posy>55</posy>
