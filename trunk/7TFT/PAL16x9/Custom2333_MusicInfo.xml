@@ -251,6 +251,24 @@
 			<texturenofocus>partymodus.gif</texturenofocus>
 			<visible>MusicPartyMode.Enabled</visible>
 		</control>
+		<control type="image">
+			<posx>312</posx>
+			<posy>409</posy>
+			<width>72</width>
+			<height>96</height>
+			<texture>lastfm.png</texture>
+			<aspectratio align="left">keep</aspectratio>			
+			<visible>Player.HasAudio + LastFM.RadioPlaying</visible>
+		</control>
+		<control type="image">
+			<posx>510</posx>
+			<posy>70</posy>
+			<width>72</width>
+			<height>96</height>
+			<texture>lastfmnotplaying.png</texture>
+			<aspectratio align="left">keep</aspectratio>			
+			<visible>!LastFM.RadioPlaying</visible>
+		</control>
 		<!-- <control>
    <description>bg preview</description>
    <type>image</type>
