@@ -1878,5 +1878,25 @@
 	         <align>justify</align>
 	         <autoscroll time="1000" delay="3000">Skin.HasSetting(AutoScroll)</autoscroll>
 	</include>
+	<include name="LastFMLOGO">
+	<control type="image">
+			<posx>652</posx>
+			<posy>450</posy>
+			<width>50</width>
+			<height>66</height>
+			<texture>lastfm.png</texture>
+			<aspectratio align="left">keep</aspectratio>			
+			<visible>Player.HasAudio + LastFM.RadioPlaying</visible>
+		</control>
+		<!-- <control type="image">
+			<posx>652</posx>
+			<posy>450</posy>
+			<width>50</width>
+			<height>66</height>
+			<texture>lastfmnotplaying.png</texture>
+			<aspectratio align="left">keep</aspectratio>			
+			<visible>!LastFM.RadioPlaying</visible>
+		</control> -->
+		</include>
 
 </includes>
