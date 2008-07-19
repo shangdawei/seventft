@@ -252,8 +252,8 @@
 			<visible>MusicPartyMode.Enabled</visible>
 		</control>
 		<control type="image">
-			<posx>312</posx>
-			<posy>409</posy>
+			<posx>510</posx>
+			<posy>70</posy>
 			<width>72</width>
 			<height>96</height>
 			<texture>lastfm.png</texture>
