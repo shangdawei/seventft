@@ -1,6 +1,7 @@
-@echo off
+@echo OFF
+color 06
 ECHO ------------------------------
-ECHO Creating 7TFT Build Folder
+ECHO Creating 7TFT Build Folder, please waiting an moment...
 rmdir BUILD /S /Q
 md BUILD
 
