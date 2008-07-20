@@ -39,6 +39,7 @@ ECHO Removing SVN directories from build
 FOR /R BUILD %%d IN (SVN) DO @RD /S /Q "%%d" 2>NUL
 
 ECHO Build Complete - Scroll Up to check for errors.
-ECHO Final build is located in the BUILD directory
-ECHO ftp the 7TFT folder in the build dir to your xbox
+ECHO Final build is located in the BUILD directory.
+ECHO ftp the 7TFT folder in the build dir to your xbox and enjoy this SKIN.
+ECHO Best Greetz     .:DjToll:.
 pause
