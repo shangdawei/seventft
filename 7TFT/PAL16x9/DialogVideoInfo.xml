@@ -264,7 +264,7 @@
 			<height>5</height>
 			<texture>separator.png</texture>
 		</control>
-		<control>
+		<!-- <control>
 			<description>Play</description>
 			<type>button</type>
 			<id>8</id>
@@ -295,31 +295,31 @@
 			<onright>10</onright>
 			<onup>4</onup>
 			<ondown>5</ondown>
-		</control>
-		
-		
+		</control> -->
 
-   <control>
-   <description>submenu button     play, resume trailer funktionen</description>	
-   <type>button</type>					
-   <id>444</id>					
-   <posx>293</posx>
-    <posy>530</posy>
-    <width>50</width>
-	<height>50</height>
-   <font>-</font>
-   <texturefocus>home-sub-FO-mmi.png</texturefocus>
-   <texturenofocus>home-sub-NF-mmi.png</texturenofocus>
-   <onleft>7</onleft>
-    <onright>445</onright>
-    <onup>11</onup>
-    <ondown>3</ondown>
-   <onclick>ActivateWindow(2788)</onclick>
-   <!-- <visible allowhiddenfocus="true">![Player.HasAudio + System.IdleTime(8)]</visible> -->
-   <animation effect="zoom" start="100" end="130" center="auto" time="80">focus</animation>
-   <animation effect="zoom" start="130" end="100" center="auto" time="80">unfocus</animation>
-           </control>
-		
+
+
+		<control>
+			<description>submenu button     play, resume trailer funktionen</description>	
+			<type>button</type>					
+			<id>888</id>					
+			<posx>293</posx>
+			<posy>530</posy>
+			<width>50</width>
+			<height>50</height>
+			<font>-</font>
+			<texturefocus>home-sub-FO-mmi.png</texturefocus>
+			<texturenofocus>home-sub-NF-mmi.png</texturenofocus>
+			<onleft>6</onleft>
+			<onright>10</onright>
+			<onup>999</onup>
+			<ondown>999</ondown>
+			<!-- <onclick>ActivateWindow(2788)</onclick> -->
+			<!-- <visible allowhiddenfocus="true">![Player.HasAudio + System.IdleTime(8)]</visible> -->
+			<animation effect="zoom" start="100" end="130" center="auto" time="80">focus</animation>
+			<animation effect="zoom" start="130" end="100" center="auto" time="80">unfocus</animation>
+		</control>
+
 		<control>
 			<description>Tracks/Review</description>
 			<type>button</type>
@@ -362,7 +362,7 @@
 			<align>left</align>
 			<aligny>bottom</aligny>
 			<onleft>12</onleft>
-			<onright>8</onright>
+			<onright>888</onright>
 			<onup>5</onup>
 			<ondown>12</ondown>
 			<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-0.8" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
@@ -466,172 +466,179 @@
 			<spinposx>390</spinposx>
 			<spinposy>180</spinposy>
 		</control>
-		
+
 		<control type="group" id="999">	
-		<posx>200</posx>
-		<posy>20</posy>		
-		<control>
-			<type>image</type>
-			<id>0</id>
-			<posx>-30</posx>
-			<posy>28</posy>
-			<width>234</width>
-			<height>398</height>
-			<texture>subpanel_playlists.png</texture>
-		</control>
-		<control>
-			<description>trailer</description>
-			<visible>yes</visible>
-			<type>button</type>
-			<id>11</id>
-			<label>-</label>
-			<posx>-7</posx>
-			<posy>350</posy>
-			<width>190</width>
-			<height>62</height>
-			<font>alwin22</font>
-			<textcolor>ffF73300</textcolor>
-			<onleft>11</onleft>
-			<onright>11</onright>
-			<onup>1110</onup>
-			<ondown>1113</ondown>
-			<alignx>center</alignx>
-			<aligny>top</aligny>
-			<textoffsetx>33</textoffsetx>
-			<textoffsety>14</textoffsety>
-			<texturefocus>sp_TV-series-button-focus2.png</texturefocus>
-			<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>			
-			<!-- <onclick>ActivateWindow(MyMusicLibrary,top100)</onclick> -->
-			<onclick>dialog.close(2788,true)</onclick>
-			<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
-			<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
-		</control>
-		<control type="label">
-			<description>trailer</description>
-			<id>30</id>
-			<label>20410</label>
-			<posx>-30</posx>
-			<posy>364</posy>
-			<width>234</width>
-			<font>alwin22</font>
-			<align>center</align>
-			<textcolor>ff696969</textcolor>
-			<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
-			<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
-		</control>
-		<control type="label">
-			<description>trailer</description>
-			<id>31</id>
-			<label>20410</label>
-			<posx>-30</posx>
-			<posy>364</posy>
-			<width>234</width>
-			<font>alwin22</font>
-			<align>center</align>
-			<textcolor>987cfc00</textcolor>
-			<visible>Control.HasFocus(11)</visible>
-			<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
-			<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
-		</control>
-		<control>
-			<description>play button</description>
-			<visible>yes</visible>
-			<type>button</type>			
-			<id>8</id>
-			<label>-</label>
-			<posx>-7</posx>
-			<posy>288</posy>
-			<width>190</width>
-			<height>66</height>
-			<font>alwin22</font>
-			<textcolor>ffF73300</textcolor>
-			<onleft>8</onleft>
-			<onright>8</onright>
-			<onup>1111</onup>
-			<ondown>1109</ondown>
-			<alignx>center</alignx>
-			<aligny>top</aligny>
-			<textoffsetx>30</textoffsetx>
-			<textoffsety>14</textoffsety>
-			<texturefocus>sp_TV-series-button-focus4.png</texturefocus>
-			<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>
-			<!-- <onclick>XBMC.ActivateWindow(20)</onclick> -->
-			<!-- <onclick>XBMC.PlayerControl(Play)</onclick>
+			<posx>200</posx>
+			<posy>20</posy>	
+			<animation effect="slide" time="400" start="-360,0" end="-40,0" acceleration="-3.8">visible</animation>
+			<animation effect="slide" end="390" center="220,70" time="190">visible</animation>
+
+			<!-- <visible>Control.IsVisible(888) + Control.HasFocus(888)</visible> -->
+
+
+			<visible>!Control.HasFocus(5) + !Control.HasFocus(6) + !Control.HasFocus(12) + !Control.HasFocus(10) + !Control.HasFocus(4) + !Control.HasFocus(50) + !Control.HasFocus(1111)</visible>
+
+
+			<control>
+				<type>image</type>
+				<id>0</id>
+				<posx>-30</posx>
+				<posy>28</posy>
+				<width>234</width>
+				<height>398</height>
+				<texture>subpanel_playlists.png</texture>
+			</control>
+			<control>
+				<description>trailer</description>
+				<visible>yes</visible>
+				<type>button</type>
+				<id>11</id>
+				<label>-</label>
+				<posx>-7</posx>
+				<posy>350</posy>
+				<width>190</width>
+				<height>62</height>
+				<font>alwin22</font>
+				<textcolor>ffF73300</textcolor>
+				<onleft>5</onleft>
+				<onright>10</onright>
+				<onup>8</onup>
+				<ondown>9</ondown>
+				<alignx>center</alignx>
+				<aligny>top</aligny>
+				<textoffsetx>33</textoffsetx>
+				<textoffsety>14</textoffsety>
+				<texturefocus>sp_TV-series-button-focus2.png</texturefocus>
+				<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>			
+				<!-- <onclick>ActivateWindow(MyMusicLibrary,top100)</onclick> -->
+				<!-- <onclick>dialog.close(2788,true)</onclick> -->
+				<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
+				<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
+			</control>
+			<control type="label">
+				<description>trailer</description>			
+				<label>20410</label>
+				<posx>-30</posx>
+				<posy>364</posy>
+				<width>234</width>
+				<font>alwin22</font>
+				<align>center</align>
+				<textcolor>ff696969</textcolor>
+				<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
+				<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
+			</control>
+			<control type="label">
+				<description>trailer</description>			
+				<label>20410</label>
+				<posx>-30</posx>
+				<posy>364</posy>
+				<width>234</width>
+				<font>alwin22</font>
+				<align>center</align>
+				<textcolor>987cfc00</textcolor>
+				<visible>Control.HasFocus(11)</visible>
+				<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
+				<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
+			</control>
+			<control>
+				<description>play button</description>
+				<visible>yes</visible>
+				<type>button</type>			
+				<id>8</id>
+				<label>-</label>
+				<posx>-7</posx>
+				<posy>288</posy>
+				<width>190</width>
+				<height>66</height>
+				<font>alwin22</font>
+				<textcolor>ffF73300</textcolor>
+				<onleft>5</onleft>
+				<onright>10</onright>
+				<onup>9</onup>
+				<ondown>11</ondown>
+				<alignx>center</alignx>
+				<aligny>top</aligny>
+				<textoffsetx>30</textoffsetx>
+				<textoffsety>14</textoffsety>
+				<texturefocus>sp_TV-series-button-focus4.png</texturefocus>
+				<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>
+				<!-- <onclick>XBMC.ActivateWindow(20)</onclick> -->
+				<!-- <onclick>XBMC.PlayerControl(Play)</onclick>
 			<onclick>XBMC.ActivateWindow(2003,8)</onclick> -->
-			<onclick>dialog.close(2788,true)</onclick>
-			<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
-			<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
-		</control>
-		<control type="label">
-			<description>play</description>
-			<label>13358</label>
-			<posx>-30</posx>
-			<posy>302</posy>
-			<width>234</width>
-			<font>alwin22</font>
-			<align>center</align>
-			<textcolor>ff696969</textcolor>
-		</control>
-		<control type="label">
-			<description>play</description>
-			<label>13358</label>
-			<posx>-30</posx>
-			<posy>302</posy>
-			<width>234</width>
-			<font>alwin22</font>
-			<align>center</align>
-			<textcolor>ffCD3278</textcolor>
-			<visible>Control.HasFocus(8)</visible>
-		</control>
-		<control>
-			<description>play resume</description>
-			<visible>yes</visible>
-			<type>button</type>
-			<!-- <onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick> -->			
-			<id>9</id>
-			<label>-</label>
-			<posx>-7</posx>
-			<posy>226</posy>
-			<width>190</width>
-			<height>62</height>
-			<font>alwin22</font>
-			<textcolor>ffF73300</textcolor>
-			<onleft>9</onleft>
-			<onright>9</onright>
-			<onup>1112</onup>
-			<ondown>1110</ondown>
-			<alignx>center</alignx>
-			<aligny>top</aligny>
-			<textoffsetx>33</textoffsetx>
-			<textoffsety>14</textoffsety>
-			<texturefocus>sp_TV-series-button-focus3.png</texturefocus>
-			<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>
-			<!-- <onclick>XBMC.PlayerControl(Resume)</onclick> -->
-			<onclick>dialog.close(2788,true)</onclick>
-			<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
-			<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
-		</control>
-		<control type="label">
-			<description>play resume</description>
-			<label>13381</label>
-			<posx>-30</posx>
-			<posy>240</posy>
-			<width>234</width>
-			<font>alwin22</font>
-			<align>center</align>
-			<textcolor>ff696969</textcolor>
-		</control>
-		<control type="label">
-			<description>play resume</description>
-			<label>13381</label>
-			<posx>-30</posx>
-			<posy>240</posy>
-			<width>234</width>
-			<font>alwin22</font>
-			<align>center</align>
-			<textcolor>ff3399FF</textcolor>
-			<visible>Control.HasFocus(9)</visible>
-		</control>
+				<!-- <onclick>dialog.close(2788,true)</onclick> -->
+				<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
+				<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
+			</control>
+			<control type="label">
+				<description>play</description>
+				<label>13358</label>
+				<posx>-30</posx>
+				<posy>302</posy>
+				<width>234</width>
+				<font>alwin22</font>
+				<align>center</align>
+				<textcolor>ff696969</textcolor>
+			</control>
+			<control type="label">
+				<description>play</description>
+				<label>13358</label>
+				<posx>-30</posx>
+				<posy>302</posy>
+				<width>234</width>
+				<font>alwin22</font>
+				<align>center</align>
+				<textcolor>ffCD3278</textcolor>
+				<visible>Control.HasFocus(8)</visible>
+			</control>
+			<control>
+				<description>play resume</description>
+				<visible>yes</visible>
+				<type>button</type>
+				<!-- <onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick> -->			
+				<id>9</id>
+				<label>-</label>
+				<posx>-7</posx>
+				<posy>226</posy>
+				<width>190</width>
+				<height>62</height>
+				<font>alwin22</font>
+				<textcolor>ffF73300</textcolor>
+				<onleft>5</onleft>
+				<onright>10</onright>
+				<onup>11</onup>
+				<ondown>8</ondown>
+				<alignx>center</alignx>
+				<aligny>top</aligny>
+				<textoffsetx>33</textoffsetx>
+				<textoffsety>14</textoffsety>
+				<texturefocus>sp_TV-series-button-focus3.png</texturefocus>
+				<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>
+				<!-- <onclick>XBMC.PlayerControl(Resume)</onclick> -->
+				<!-- <onclick>dialog.close(2788,true)</onclick> -->
+				<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
+				<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
+			</control>
+			<control type="label">
+				<description>play resume</description>
+				<label>13381</label>
+				<posx>-30</posx>
+				<posy>240</posy>
+				<width>234</width>
+				<font>alwin22</font>
+				<align>center</align>
+				<textcolor>ff696969</textcolor>
+			</control>
+			<control type="label">
+				<description>play resume</description>
+				<label>13381</label>
+				<posx>-30</posx>
+				<posy>240</posy>
+				<width>234</width>
+				<font>alwin22</font>
+				<align>center</align>
+				<textcolor>ff3399FF</textcolor>
+				<visible>Control.HasFocus(9)</visible>
+			</control>
 		</control>
 		<!-- <control>
    <description>disc:</description>
