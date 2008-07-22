@@ -66,8 +66,8 @@
       <id>1</id>
       <posx>18</posx>
       <posy>112</posy>
-      <width>140</width>
-      <height>140</height>
+      <width>180</width>
+      <height>180</height>
       <info>VideoPlayer.Cover</info>
       <aspectratio>keep</aspectratio>      
       <visible>Player.HasVideo + [Player.Paused]</visible>
