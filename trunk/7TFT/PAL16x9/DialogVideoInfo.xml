@@ -298,15 +298,14 @@
 		</control> -->
 
 
-
 		<control>
 			<description>submenu button     play, resume trailer funktionen</description>	
 			<type>button</type>					
 			<id>888</id>					
-			<posx>293</posx>
-			<posy>530</posy>
-			<width>50</width>
-			<height>50</height>
+			<posx>410</posx>
+			<posy>564</posy>
+			<width>58</width>
+			<height>58</height>
 			<font>-</font>
 			<texturefocus>home-sub-FO-mmi.png</texturefocus>
 			<texturenofocus>home-sub-NF-mmi.png</texturenofocus>
@@ -319,6 +318,7 @@
 			<animation effect="zoom" start="100" end="130" center="auto" time="80">focus</animation>
 			<animation effect="zoom" start="130" end="100" center="auto" time="80">unfocus</animation>
 		</control>
+
 
 		<control>
 			<description>Tracks/Review</description>
@@ -385,7 +385,7 @@
 			<textoffsety>102</textoffsety>
 			<align>right</align>
 			<aligny>bottom</aligny>
-			<onleft>9</onleft>
+			<onleft>888</onleft>
 			<onright>4</onright>
 			<onup>12</onup>
 			<ondown>5</ondown>
@@ -467,13 +467,15 @@
 			<spinposy>180</spinposy>
 		</control>
 
+
+
 		<control type="group" id="999">	
-			<posx>200</posx>
-			<posy>20</posy>	
+			<posx>390</posx>
+			<posy>116</posy>	
 			<animation effect="slide" time="400" start="-360,0" end="-40,0" acceleration="-3.8">visible</animation>
 			<animation effect="slide" end="390" center="220,70" time="190">visible</animation>
 
-			<!-- <visible>Control.IsVisible(888) + Control.HasFocus(888)</visible> -->
+
 
 
 			<visible>!Control.HasFocus(5) + !Control.HasFocus(6) + !Control.HasFocus(12) + !Control.HasFocus(10) + !Control.HasFocus(4) + !Control.HasFocus(50) + !Control.HasFocus(1111)</visible>
@@ -485,7 +487,7 @@
 				<posx>-30</posx>
 				<posy>28</posy>
 				<width>234</width>
-				<height>398</height>
+				<height>406</height>
 				<texture>subpanel_playlists.png</texture>
 			</control>
 			<control>
@@ -508,7 +510,7 @@
 				<aligny>top</aligny>
 				<textoffsetx>33</textoffsetx>
 				<textoffsety>14</textoffsety>
-				<texturefocus>sp_TV-series-button-focus2.png</texturefocus>
+				<texturefocus>sp_TV-series-button-focus4.png</texturefocus>
 				<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>			
 				<!-- <onclick>ActivateWindow(MyMusicLibrary,top100)</onclick> -->
 				<!-- <onclick>dialog.close(2788,true)</onclick> -->
@@ -535,7 +537,7 @@
 				<width>234</width>
 				<font>alwin22</font>
 				<align>center</align>
-				<textcolor>987cfc00</textcolor>
+				<textcolor>ffCD3278</textcolor>
 				<visible>Control.HasFocus(11)</visible>
 				<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
 				<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
@@ -551,6 +553,7 @@
 				<width>190</width>
 				<height>66</height>
 				<font>alwin22</font>
+				
 				<textcolor>ffF73300</textcolor>
 				<onleft>5</onleft>
 				<onright>10</onright>
@@ -560,7 +563,8 @@
 				<aligny>top</aligny>
 				<textoffsetx>30</textoffsetx>
 				<textoffsety>14</textoffsety>
-				<texturefocus>sp_TV-series-button-focus4.png</texturefocus>
+				
+				<texturefocus>sp_TV-series-button-focus2.png</texturefocus>
 				<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>
 				<!-- <onclick>XBMC.ActivateWindow(20)</onclick> -->
 				<!-- <onclick>XBMC.PlayerControl(Play)</onclick>
@@ -587,7 +591,8 @@
 				<width>234</width>
 				<font>alwin22</font>
 				<align>center</align>
-				<textcolor>ffCD3278</textcolor>
+				
+				<textcolor>987cfc00</textcolor>
 				<visible>Control.HasFocus(8)</visible>
 			</control>
 			<control>
