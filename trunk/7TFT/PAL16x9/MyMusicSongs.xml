@@ -511,9 +511,10 @@
    <onleft>2</onleft>
    <onright>50</onright>
    <onup>50</onup>
-   <ondown>50</ondown>
-   <animation effect="zoom" start="85" end="100" center="auto" time="130">focus</animation>
-   <animation effect="zoom" start="100" end="85" center="auto" time="130">unfocus</animation>
+   <ondown>50</ondown>   
+    <animation effect="zoom" start="85" end="100" center="auto" time="130">focus</animation>
+   <animation effect="zoom" start="100" end="85" center="auto" time="130">unfocus</animation>    
+   <!-- <smoothscrolling>true</smoothscrolling> -->
    <include>contentpanelslide</include>
   </control>
 
@@ -680,10 +681,3 @@
    <width>588</width>
    <height>410</height>
   </control> -->
-
-
-
-
-
-
-
