@@ -51,7 +51,7 @@
    <font>eth24</font>
    <textcolor>98FF7F24</textcolor>
    <visible>IsEmpty(ListItem.folderthumb)</visible>
-</control> --> 
+</control> -->
 		<control>
 			<description>Movie Title value</description>
 			<type>fadelabel</type>
@@ -296,12 +296,10 @@
 			<onup>4</onup>
 			<ondown>5</ondown>
 		</control> -->
-
-
 		<control>
-			<description>submenu button     play, resume trailer funktionen</description>	
-			<type>button</type>					
-			<id>888</id>					
+			<description>submenu button     play, resume trailer funktionen</description>
+			<type>button</type>
+			<id>888</id>
 			<posx>410</posx>
 			<posy>564</posy>
 			<width>58</width>
@@ -318,8 +316,6 @@
 			<animation effect="zoom" start="100" end="130" center="auto" time="80">focus</animation>
 			<animation effect="zoom" start="130" end="100" center="auto" time="80">unfocus</animation>
 		</control>
-
-
 		<control>
 			<description>Tracks/Review</description>
 			<type>button</type>
@@ -411,7 +407,7 @@
 			<onright>4</onright>
 			<onup>6</onup>
 			<ondown>10</ondown>
-			<!-- <visible>Container.Content(TVShows)</visible> -->	
+			<!-- <visible>Container.Content(TVShows)</visible> -->
 			<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-0.8" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 			<animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 		</control>
@@ -466,21 +462,12 @@
 			<spinposx>390</spinposx>
 			<spinposy>180</spinposy>
 		</control>
-
-
-
-		<control type="group" id="999">	
+		<control type="group" id="999">
 			<posx>390</posx>
-			<posy>116</posy>	
+			<posy>116</posy>
 			<animation effect="slide" time="400" start="-360,0" end="-40,0" acceleration="-3.8">visible</animation>
-			<animation effect="slide" end="390" center="220,70" time="190">visible</animation>
-
-
-
-
+			<animation effect="slide" time="380" start="600,0" end="-40,0" acceleration="1.1">visibleChange</animation>
 			<visible>!Control.HasFocus(5) + !Control.HasFocus(6) + !Control.HasFocus(12) + !Control.HasFocus(10) + !Control.HasFocus(4) + !Control.HasFocus(50) + !Control.HasFocus(1111)</visible>
-
-
 			<control>
 				<type>image</type>
 				<id>0</id>
@@ -511,14 +498,14 @@
 				<textoffsetx>33</textoffsetx>
 				<textoffsety>14</textoffsety>
 				<texturefocus>sp_TV-series-button-focus4.png</texturefocus>
-				<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>			
+				<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>
 				<!-- <onclick>ActivateWindow(MyMusicLibrary,top100)</onclick> -->
 				<!-- <onclick>dialog.close(2788,true)</onclick> -->
 				<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
 				<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
 			</control>
 			<control type="label">
-				<description>trailer</description>			
+				<description>trailer</description>
 				<label>20410</label>
 				<posx>-30</posx>
 				<posy>364</posy>
@@ -530,7 +517,7 @@
 				<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
 			</control>
 			<control type="label">
-				<description>trailer</description>			
+				<description>trailer</description>
 				<label>20410</label>
 				<posx>-30</posx>
 				<posy>364</posy>
@@ -545,7 +532,7 @@
 			<control>
 				<description>play button</description>
 				<visible>yes</visible>
-				<type>button</type>			
+				<type>button</type>
 				<id>8</id>
 				<label>-</label>
 				<posx>-7</posx>
@@ -553,7 +540,6 @@
 				<width>190</width>
 				<height>66</height>
 				<font>alwin22</font>
-				
 				<textcolor>ffF73300</textcolor>
 				<onleft>5</onleft>
 				<onright>10</onright>
@@ -563,12 +549,11 @@
 				<aligny>top</aligny>
 				<textoffsetx>30</textoffsetx>
 				<textoffsety>14</textoffsety>
-				
 				<texturefocus>sp_TV-series-button-focus2.png</texturefocus>
 				<texturenofocus>sp_TV-series-button-nofocus2.png</texturenofocus>
 				<!-- <onclick>XBMC.ActivateWindow(20)</onclick> -->
 				<!-- <onclick>XBMC.PlayerControl(Play)</onclick>
-			<onclick>XBMC.ActivateWindow(2003,8)</onclick> -->
+				<onclick>XBMC.ActivateWindow(2003,8)</onclick> -->
 				<!-- <onclick>dialog.close(2788,true)</onclick> -->
 				<animation effect="zoom" start="100" end="108" center="auto" time="80">focus</animation>
 				<animation effect="zoom" start="108" end="100" center="auto" time="80">unfocus</animation>
@@ -591,7 +576,6 @@
 				<width>234</width>
 				<font>alwin22</font>
 				<align>center</align>
-				
 				<textcolor>987cfc00</textcolor>
 				<visible>Control.HasFocus(8)</visible>
 			</control>
@@ -599,7 +583,7 @@
 				<description>play resume</description>
 				<visible>yes</visible>
 				<type>button</type>
-				<!-- <onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick> -->			
+				<!-- <onclick>ActivateWindow(MyVideoLibrary,tvshowtitles)</onclick> -->
 				<id>9</id>
 				<label>-</label>
 				<posx>-7</posx>
@@ -668,4 +652,3 @@
   </control> -->
 	</controls>
 </window>
-<!-- TRAILER BUTTON  neeed !!! -->
