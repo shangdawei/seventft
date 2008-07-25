@@ -347,6 +347,12 @@
 			<size>20</size>
 		</font>
 		<font>
+			<name>idua18aspect</name>
+			<filename>idua.ttf</filename>
+			<size>18</size>
+			<aspect>0.90</aspect>
+		</font>
+		<font>
 			<name>ArialSettings</name>
 			<filename>Aarial.ttf</filename>
 			<size>19</size>

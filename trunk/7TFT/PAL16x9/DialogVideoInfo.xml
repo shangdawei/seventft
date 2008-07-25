@@ -432,7 +432,7 @@
 			<posy>348</posy>
 			<width>440</width>
 			<height>175</height>
-			<font>idua20</font>
+			<font>idua18aspect</font>
 			<textcolor>98ffffff</textcolor>
 			<onleft>5</onleft>
 			<onright>50</onright>
