@@ -52,17 +52,17 @@
 			<type>image</type>
 			<posx>337</posx>
 			<posy>114</posy>
-			<width>232</width>
-			<height>126</height>
+			<width>222</width>
+			<height>124</height>
 			<texture>volume_bagground_leiste_oben.png</texture>
-			<!-- <aspectratio>keep</aspectratio> -->
+			<aspectratio>keep</aspectratio>
 		</control>	
 		<control>
 			<description>Volume dB Label</description>
 			<type>label</type>
-			<posx>538</posx>
-			<posy>148</posy>
-			<width>370</width>
+			<posx>528</posx>
+			<posy>143</posy>
+			<width>170</width>
 			<height>130</height>
 			<font>idua40aspect</font>
 			<textcolor>ffece9e9</textcolor>
