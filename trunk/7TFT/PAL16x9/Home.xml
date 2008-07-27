@@ -1668,6 +1668,7 @@
 			<texture>volume_overlaytop.png</texture>
 			<visible>!Control.HasFocus(2)</visible>
 			<visible>!MusicPartyMode.Enabled</visible>   
+			
 		</control>
 
 		<control type="image">
@@ -1679,6 +1680,7 @@
 			<texture>volume_overlay.png</texture>
 			<visible>!Control.HasFocus(2)</visible>
 			<visible>!MusicPartyMode.Enabled</visible>   
+			
 		</control>
 		
 		<control type="image">
@@ -1690,6 +1692,7 @@
 			<texture>volumeHintergrundMiniBar.png</texture>
 			<visible>!Control.HasFocus(2)</visible>
 			<visible>!MusicPartyMode.Enabled</visible>   
+			
 		</control>
   
 
