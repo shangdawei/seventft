@@ -200,7 +200,13 @@
 		<font>
 			<name>idua18aspect</name>
 			<filename>idua.ttf</filename>
-			<size>26</size>
+			<size>24</size>
+			<aspect>0.90</aspect>
+		</font>
+		<font>
+			<name>idua40aspect</name>
+			<filename>idua.ttf</filename>
+			<size>66</size>
 			<aspect>0.90</aspect>
 		</font>
 		<font>
