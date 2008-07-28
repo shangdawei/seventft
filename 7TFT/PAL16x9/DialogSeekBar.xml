@@ -4,7 +4,8 @@
  <defaultcontrol>1</defaultcontrol>
  <animation effect="zoom" start="1" center="360,280" time="400" acceleration="-1" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 	<!-- <animation effect="zoom" start="100" end="0" center="360,288" reverted="false" acceleration="1.8" time="200" delay="200" condition="!Skin.HasSetting(Animate)">WindowClose</animation> --> 
-	<animation effect="slide" end="390" center="220,70" time="390" delay="600">WindowClose</animation>
+	<!-- <animation effect="slide" end="390" center="220,70" time="390" delay="600">WindowClose</animation> -->
+	<animation effect="zoom" start="100" end="0" center="360,288" reverted="false" acceleration="1" time="300" delay="1200" condition="!Skin.HasSetting(Animate)">WindowClose</animation>
  <visible>Player.Seeking | Player.DisplayAfterSeek | [Player.ShowInfo + Window.IsActive(FullScreenVideo)] | Window.IsActive(VideoOSD) | Window.IsActive(MusicOSD) | Player.Paused | Player.Forwarding | Player.Rewinding</visible>
 
 
