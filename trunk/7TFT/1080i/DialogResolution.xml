@@ -3,7 +3,7 @@
 		<control type="image" id="1">
 			<description>hdtv logo</description>      
 			<texture>1080i.png</texture>
-			<visible>Skin.HasSetting(resolution)</visible>
+			<!-- <visible>Skin.HasSetting(resolution)</visible> -->
 			<posx>55</posx>
 			<posy>30</posy>
 			<width>33</width>
