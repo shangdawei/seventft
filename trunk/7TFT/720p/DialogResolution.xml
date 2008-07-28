@@ -4,7 +4,7 @@
 			<description>720p logo</description>      
 			<texture>720p.png</texture>
 			<!-- <visible>Skin.HasSetting(resolution)</visible> -->
-			<posx>60</posx>
+			<posx>51</posx>
 			<posy>470</posy>
 			<width>86</width>
 			<height>23</height>
