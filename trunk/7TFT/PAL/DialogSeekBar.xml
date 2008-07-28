@@ -24,7 +24,7 @@
 			<animation effect="zoom" start="100" end="0" center="360,288" reverted="false" acceleration="1" time="300" delay="200" condition="!Skin.HasSetting(Animate)">WindowClose</animation>
 		</control>
 		<control>
-			<description>Media Info Background Image</description>			
+			<description>Media Info Background Image</description>
 			<type>image</type>
 			<id>1</id>
 			<posx>200</posx>
@@ -275,19 +275,17 @@
 			<texture>32z.png</texture>
 			<colorkey>0</colorkey>
 		</control>
-		<!-- progressbar dialog --> 
-
+		<!-- progressbar dialog -->
 		<control>
 			<description>seek label Background</description>
 			<type>image</type>
 			<id>0</id>
-			<posx>438</posx> 
-			<posy>112</posy> 
-			<width>250</width> 
-			<height>98</height> 
+			<posx>438</posx>
+			<posy>112</posy>
+			<width>250</width>
+			<height>98</height>
 			<texture>voulume-panel-bg.png</texture>
 		</control>
-
 		<control>
 			<description>Elapsed Time Label</description>
 			<type>label</type>
@@ -301,7 +299,6 @@
 			<height>16</height>
 			<visible>!Player.Seeking</visible>
 		</control>
-
 		<control>
 			<description>Seek Time Label</description>
 			<type>label</type>
@@ -315,7 +312,6 @@
 			<height>16</height>
 			<visible>Player.Seeking</visible>
 		</control>
-
 		<control>
 			<description>Duration Label</description>
 			<type>label</type>
@@ -328,10 +324,6 @@
 			<width>150</width>
 			<height>16</height>
 		</control>
-
-
-
-
 		<control>
 			<description>Progressbar</description>
 			<type>progress</type>
@@ -348,7 +340,6 @@
 			<overlaytexture>-</overlaytexture>
 			<visible>true</visible>
 		</control>
-
 		<control>
 			<description>Seek Slider</description>
 			<type>slider</type>
@@ -366,7 +357,5 @@
 			<onleft>1</onleft>
 			<onright>1</onright>
 		</control>
-
-
 	</controls>
 </window>
