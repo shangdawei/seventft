@@ -2,7 +2,7 @@
 	<id>115</id>
 	<defaultcontrol>1</defaultcontrol>
 	<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-1" reversible="false"             condition="!Skin.HasSetting(animated)">WindowOpen</animation>
-	<animation effect="zoom" start="100" end="0" center="360,288" reverted="false" acceleration="1" time="300" delay="200" condition="!Skin.HasSetting(Animate)">WindowClose</animation>
+	<animation effect="zoom" start="100" end="0" center="360,288" reverted="false" acceleration="1" time="300" delay="1200" condition="!Skin.HasSetting(Animate)">WindowClose</animation>
 	<visible>Player.Seeking | Player.DisplayAfterSeek | [Player.ShowInfo + Window.IsActive(FullScreenVideo)] | Window.IsActive(VideoOSD) | Window.IsActive(MusicOSD) | Player.Paused | Player.Forwarding | Player.Rewinding</visible>
 	<coordinates>
 		<posx>-1</posx>
@@ -275,61 +275,69 @@
 			<texture>32z.png</texture>
 			<colorkey>0</colorkey>
 		</control>
-		<!-- progressbar dialog -->
+		<!-- progressbar dialog --> 
+
 		<control>
 			<description>seek label Background</description>
 			<type>image</type>
 			<id>0</id>
-			<posx>438</posx>
-			<posy>112</posy>
-			<width>250</width>
-			<height>85</height>
+			<posx>438</posx> 
+			<posy>112</posy> 
+			<width>250</width> 
+			<height>98</height> 
 			<texture>voulume-panel-bg.png</texture>
 		</control>
+
 		<control>
 			<description>Elapsed Time Label</description>
 			<type>label</type>
 			<id>22</id>
-			<posx>563</posx>
-			<posy>120</posy>
-			<font>alwin16normal</font>
+			<posx>551</posx>
+			<posy>126</posy>
+			<font>idua24</font>
 			<align>right</align>
 			<info>Player.Time</info>
 			<width>150</width>
 			<height>16</height>
 			<visible>!Player.Seeking</visible>
 		</control>
+
 		<control>
 			<description>Seek Time Label</description>
 			<type>label</type>
 			<id>22</id>
-			<posx>563</posx>
-			<posy>120</posy>
-			<font>alwin16normal</font>
+			<posx>551</posx>
+			<posy>126</posy>
+			<font>idua24</font>
 			<align>right</align>
 			<info>Player.SeekTime</info>
 			<width>150</width>
 			<height>16</height>
 			<visible>Player.Seeking</visible>
 		</control>
+
 		<control>
 			<description>Duration Label</description>
 			<type>label</type>
 			<id>0</id>
-			<posx>568</posx>
-			<posy>120</posy>
-			<label>$INFO[Player.Duration,/ ]</label>
-			<font>alwin16normal</font>
+			<posx>560</posx>
+			<posy>126</posy>
+			<label>$INFO[Player.Duration,  /  ]</label>
+			<font>idua24</font>
 			<align>left</align>
 			<width>150</width>
 			<height>16</height>
 		</control>
+
+
+
+
 		<control>
 			<description>Progressbar</description>
 			<type>progress</type>
 			<id>23</id>
 			<posx>470</posx>
-			<posy>152</posy>
+			<posy>164</posy>
 			<width>204</width>
 			<height>8</height>
 			<info>Player.Progress</info>
@@ -340,12 +348,13 @@
 			<overlaytexture>-</overlaytexture>
 			<visible>true</visible>
 		</control>
+
 		<control>
 			<description>Seek Slider</description>
 			<type>slider</type>
 			<id>401</id>
 			<posx>472</posx>
-			<posy>161</posy>
+			<posy>173</posy>
 			<width>205</width>
 			<height>9</height>
 			<texturesliderbar>seekslider.png</texturesliderbar>
@@ -357,5 +366,7 @@
 			<onleft>1</onleft>
 			<onright>1</onright>
 		</control>
+
+
 	</controls>
 </window>
