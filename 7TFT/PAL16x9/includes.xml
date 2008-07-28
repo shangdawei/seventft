@@ -10,7 +10,9 @@
 	<include file="CommonViewTypes_Library.xml" />
 	<include file="CommonViewTypes_Dialogs.xml" />
 	<include file="Backgrounds.xml" />
-	<include name="textcolorwhite">
+	<include name="textcolorwhite">	
+	<include file="DialogResolution.xml" />
+	   
 		<textcolor>ffffffff</textcolor>
 	</include>
 	<include name="textcolorgrey">
