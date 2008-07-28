@@ -1,0 +1,14 @@
+<includes>
+	<include name="resolutionlogo">
+		<control type="image" id="1">
+			<description>hdtv logo</description>      
+			<texture>720p.png</texture>
+			<!-- <visible>Skin.HasSetting(resolution)</visible> -->
+			<posx>55</posx>
+			<posy>30</posy>
+			<width>33</width>
+			<height>24</height>
+		</control>
+	</include>
+</includes>
+
