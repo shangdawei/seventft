@@ -1308,7 +1308,7 @@
    <description>rss feed</description>
    <type>rss</type>
    <id>1</id>
-   <posx>68</posx>
+   <posx>110</posx>
    <posy>470</posy>
    <width>612</width>
    <font>idua18</font>
