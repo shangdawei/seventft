@@ -17,7 +17,7 @@
 				<posy>28</posy>
 				<width>234</width>
 				<height>406</height>
-				<texture>subpanel_playlists.png</texture>
+				<texture>subpanel_playlists.png</texture>				
 			</control>
 			<control type="image">
 				<description>warning Icon</description>
@@ -51,7 +51,7 @@
 				<animation effect="fade" delay="350" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
 			</control>
-			<control type="image">
+			<!-- <control type="image">
 				<posx>-20</posx>
 				<posy>262</posy>
 				<width>214</width>
@@ -59,7 +59,7 @@
 				<texture>separator.png</texture>
 				<animation effect="fade" delay="350" time="200">WindowOpen</animation>
 				<animation effect="fade" time="200">WindowClose</animation>
-			</control>
+			</control> -->
 			<control>
 				<description>Yes Button</description>
 				<visible>yes</visible>
@@ -67,7 +67,7 @@
 				<id>11</id>
 				<label>-</label>
 				<posx>-7</posx>
-				<posy>350</posy>
+				<posy>360</posy>
 				<width>190</width>
 				<height>62</height>
 				<font>alwin22</font>
@@ -91,7 +91,7 @@
 				<description>yes</description>
 				<label>12019</label>
 				<posx>-30</posx>
-				<posy>364</posy>
+				<posy>374</posy>
 				<width>234</width>
 				<font>alwin22</font>
 				<align>center</align>
@@ -103,7 +103,7 @@
 				<description>yes</description>
 				<label>12019</label>
 				<posx>-30</posx>
-				<posy>364</posy>
+				<posy>374</posy>
 				<width>234</width>
 				<font>alwin22</font>
 				<align>center</align>
@@ -119,7 +119,7 @@
 				<id>8</id>
 				<label>-</label>
 				<posx>-7</posx>
-				<posy>288</posy>
+				<posy>298</posy>
 				<width>190</width>
 				<height>66</height>
 				<font>alwin22</font>
@@ -142,7 +142,7 @@
 				<description>no</description>
 				<label>12018</label>
 				<posx>-30</posx>
-				<posy>302</posy>
+				<posy>312</posy>
 				<width>234</width>
 				<font>alwin22</font>
 				<align>center</align>
@@ -154,7 +154,7 @@
 				<description>no</description>
 				<label>12018</label>
 				<posx>-30</posx>
-				<posy>302</posy>
+				<posy>312</posy>
 				<width>234</width>
 				<font>alwin22</font>
 				<align>center</align>
