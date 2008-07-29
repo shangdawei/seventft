@@ -116,7 +116,7 @@
 				<posy>338</posy>
 				<width>106</width>
 				<height>161</height>
-				<label>20190</label>
+				<label>31505</label>
 				<font>alwin22</font>
 				<textcolor>9000D9FF</textcolor>
 				<texturefocus>button-reunten-settings-fo.png</texturefocus>
@@ -392,8 +392,44 @@
 					<texturenofocus>-</texturenofocus>
 					<font>idua18</font>
 				</control>
+				<!-- <control type="radiobutton" id="43">
+					<description>Enable Scroll Bars</description>
+					<width>485</width>
+					<height>30</height>
+					<texturefocus>list-focus.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<selected>Skin.HasSetting(ScrollBars)</selected>
+					<onclick>Skin.ToggleSetting(ScrollBars)</onclick>
+					<label>enable Scroll Bar</label>
+					<font>WindowTextFont</font>
+					<textcolor>WindowText</textcolor>
+					<focusedcolor>WindowFocusText</focusedcolor>
+					<font>idua18</font>
+				</control> -->
+				<control type="radiobutton" id="43">
+					<description>Enable Scroll Bars</description>
+					<width>485</width>
+					<label>Enable Scroll Bar</label>
+					<selected>Skin.HasSetting(ScrollBars)</selected>
+					<onclick>Skin.ToggleSetting(ScrollBars)</onclick>				
+					<textoffsetx>7</textoffsetx>
+					<texturefocus>list-focus.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<font>idua18</font>
+				</control>
+				<control type="button" id="121">
+					<description>reset skin</description>
+					<width>485</width>
+					<label>Reset settings</label>
+					<onclick>Skin.ResetSettings</onclick>
+					<onclick>XBMC.RestartApp</onclick>					
+					<textoffsetx>7</textoffsetx>
+					<texturefocus>list-focus.png</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<font>idua18</font>
+				</control>
+				
 			</control>
-			<!-- Background Options -->
 			<control type="group" id="9006">
 				<posx>-40</posx>
 				<posy>-220</posy>
