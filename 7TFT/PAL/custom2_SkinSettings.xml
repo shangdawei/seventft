@@ -25,6 +25,7 @@
 			<font>home_red</font>
 			<textcolor>ff444444</textcolor>
 		</control>
+
 		<control type="label" id="1">
 			<description>description label skin setup</description>
 			<posx>355</posx>
@@ -39,7 +40,7 @@
 		<control type="group" id="9001">
 			<posx>-30</posx>
 			<posy>80</posy>
-			<!-- <include>buttonpanelslide</include> -->
+
 			<control type="button" id="11">
 				<description>General Settings</description>
 				<posx>30</posx>
@@ -63,6 +64,7 @@
 				<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-0.8" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 				<animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 			</control>
+			<include>resolutionlogo</include>
 			<control type="button" id="12">
 				<description>Home Settings</description>
 				<posx>641</posx>
@@ -421,14 +423,15 @@
 					<description>reset skin</description>
 					<width>485</width>
 					<label>Reset settings</label>
-					<onclick>Skin.ResetSettings</onclick>
-					<onclick>XBMC.RestartApp</onclick>					
+					<onclick>XBMC.ActivateWindow(8155)</onclick>
+					<!-- <onclick>Skin.ResetSettings</onclick>
+					<onclick>XBMC.RestartApp</onclick> -->					
 					<textoffsetx>7</textoffsetx>
 					<texturefocus>list-focus.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<font>idua18</font>
 				</control>
-				
+
 			</control>
 			<control type="group" id="9006">
 				<posx>-40</posx>
@@ -721,6 +724,7 @@
 				</control>
 			</control>
 		</control>
+
 		<include>windowswitchtransition</include>
 	</controls>
 </window>

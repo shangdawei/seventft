@@ -4,8 +4,8 @@
 			<description>43 logo</description>      
 			<texture>pal43.png</texture>
 			<!-- <visible>Skin.HasSetting(resolution)</visible> -->
-			<posx>51</posx>
-			<posy>470</posy>
+			<posx>351</posx>
+			<posy>518</posy>
 			<width>86</width>
 			<height>23</height>
 		</control>

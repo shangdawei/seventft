@@ -1701,7 +1701,7 @@
 			<visible>!MusicPartyMode.Enabled</visible>   
 		</control>
  
-<include>resolutionlogo</include>
+
 
  </controls>
 
