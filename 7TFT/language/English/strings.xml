@@ -51,6 +51,6 @@
 	<string id="31533">Weather Script Path</string>
 	<string id="31534">Set Day Background [COLOR WindowFocusText]05:00,17:00[/COLOR]</string>
 	<string id="31535">Set Night Background [COLOR WindowFocusText]17:00,05:00[/COLOR]</string>
-	<string id="31536">Reset Day Background</string>
-	<string id="31537">Reset Night Background</string>
+	<string id="31536">3rd</string>
+	<string id="31537">Next But One</string>
 </strings>

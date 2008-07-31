@@ -332,6 +332,11 @@
 			<size>30</size>
 		</font>
 		<font>
+			<name>idua12</name>
+			<filename>idua.ttf</filename>
+			<size>12</size>
+		</font>
+		<font>
 			<name>idua24</name>
 			<filename>idua.ttf</filename>
 			<size>24</size>
