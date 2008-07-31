@@ -46,7 +46,7 @@
 			<posy>106</posy>
 			<width>61</width>
 			<height>78</height>
-			<texture>case.png</texture>
+			<texture>CaseVis.png</texture>
 			<visible>Player.ShowInfo</visible>
 			<animation effect="fade" time="100">VisibleChange</animation>
 			<animation effect="slide" time="500" start="0,-300" end="0,0" acceleration="-1.1" delay="0" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
@@ -71,7 +71,7 @@
 			<posy>86</posy>
 			<width>86</width>
 			<height>110</height>
-			<texture>case.png</texture>
+			<texture>CaseVis.png</texture>
 			<visible>Player.ShowInfo</visible>
 			<animation effect="fade" time="100">VisibleChange</animation>
 			<animation effect="slide" time="500" start="0,-300" end="0,0" acceleration="-1.1" delay="0" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
@@ -96,7 +96,7 @@
 			<posy>52</posy>
 			<width>130</width>
 			<height>160</height>
-			<texture>case.png</texture>
+			<texture>CaseVis.png</texture>
 			<visible>Player.ShowInfo</visible>
 			<animation effect="fade" time="100">VisibleChange</animation>
 			<animation effect="slide" time="500" start="0,-300" end="0,0" acceleration="-1.1" delay="0" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
@@ -124,7 +124,7 @@
 			<posy>1</posy>
 			<width>194</width>
 			<height>232</height>
-			<texture>case.png</texture>
+			<texture>CaseVis.png</texture>
 			<visible>Player.ShowInfo</visible>
 			<animation effect="fade" time="1000">VisibleChange</animation>
 			<animation effect="slide" time="500" start="0,-300" end="0,0" acceleration="-1.1" delay="0" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
