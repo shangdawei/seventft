@@ -1612,7 +1612,8 @@
    <info>System.Date</info>
    <align>left</align>
    <font>font12</font>
-   <textcolor>ff666666</textcolor>
+   <textcolor>ff666666</textcolor>  
+   <visible>!Window.IsActive(104)</visible>
    <visible>![Player.HasAudio + System.IdleTime(8)]</visible>
   </control>
 
@@ -1627,6 +1628,7 @@
    <align>right</align>
    <font>font12</font>
    <textcolor>ff666666</textcolor>
+   <visible>!Window.IsActive(104)</visible>
    <visible>![Player.HasAudio + System.IdleTime(8)]</visible>
   </control>
 
