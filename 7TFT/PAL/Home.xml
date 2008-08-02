@@ -283,10 +283,10 @@
 
   <control>
    <type>visualisation</type>
-   <posx>65</posx>
-   <posy>82</posy>
-   <width>588</width>
-   <height>410</height>
+   <posx>30</posx>
+   <posy>30</posy>
+   <width>660</width>
+   <height>516</height>
    <visible>!Skin.HasSetting(HomeViewToggle)</visible>
   </control>
 
@@ -294,10 +294,10 @@
    <description>video preview window</description>
    <type>videowindow</type>
    <id>1</id>
-   <posx>65</posx>
-   <posy>82</posy>
-   <width>588</width>
-   <height>410</height>
+   <posx>30</posx>
+   <posy>30</posy>
+   <width>660</width>
+   <height>516</height>
    <visible>!Skin.HasSetting(HomeViewToggle)</visible>
   </control>
 
@@ -1443,25 +1443,24 @@
   
 
   <control>
-   <description>xlink kai conditional button</description>
+   <description>Last.FM conditional button</description>
    <type>button</type>
    <id>97</id>
-   <posx>380</posx>
-   <posy>518</posy>
-   <width>50</width>
-   <height>50</height>
+   <posx>373</posx>
+   <posy>523</posy>
+   <width>36</width>
+   <height>41</height>
    <label>-</label>
-   <texturefocus>home-Xlink-FO-mmi.png</texturefocus>
-   <texturenofocus>home-Xlink-NF-mmi.png</texturenofocus>
-   <onclick>ActivateWindow(XlinkKai)</onclick>
-   <visible>System.KaiConnected</visible>
-   <include>homemisc</include>
+   <texturefocus>lastfm.png</texturefocus>
+   <texturenofocus>lastfmnotplaying.png</texturenofocus>   
+   <onclick>XBMC.ActivateWindow(MyMusicLibrary,lastfm://)</onclick>  
+   <!-- <include>homemisc</include> -->
    <onleft>447</onleft>
    <onright>95</onright>
    <onup>5</onup>
    <ondown>3</ondown>
-   <animation effect="zoom" start="100" end="130" center="auto" time="80">focus</animation>
-   <animation effect="zoom" start="130" end="100" center="auto" time="80">unfocus</animation>
+   <animation effect="zoom" start="100" end="120" center="auto" time="80">focus</animation>
+   <animation effect="zoom" start="120" end="100" center="auto" time="80">unfocus</animation>
    </control>
 
 
