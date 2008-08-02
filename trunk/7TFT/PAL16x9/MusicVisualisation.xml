@@ -375,12 +375,13 @@
 			<description>Uhr label</description>
 			<type>label</type>
 			<id>0</id>
-			<posx>600</posx>
-			<posy>516</posy>
+			<posx>658</posx>
+			<posy>513</posy>
 			<label>time</label>
 			<info>System.Time</info>
 			<font>alwin30</font>
 			<textcolor>ffff8c00</textcolor>
+			<align>right</align>
 			<include>zoom</include>
 			<animation effect="fade" time="1000">VisibleChange</animation>
 			<animation effect="slide" time="500" start="600,0" end="0,0" acceleration="-1.1" delay="0" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
@@ -390,7 +391,7 @@
 			<description>Uhr.png</description>
 			<type>image</type>
 			<posx>667</posx>
-			<posy>513</posy>
+			<posy>511</posy>
 			<height>38</height>
 			<width>28</width>
 			<include>zoom</include>
