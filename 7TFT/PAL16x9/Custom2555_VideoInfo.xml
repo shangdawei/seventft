@@ -1,16 +1,42 @@
 <window type="buttonMenu" id="2555">
 	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
 	<visible>Player.HasVideo + Window.IsActive(2555)</visible>
 	<controls>
 		<!--  Background!-->
 		<control type="image" id="1">
-			<description>Window name</description>
+			<description>background media info</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+			<texture>background-plain.png</texture>
+			<colordiffuse>ff888888</colordiffuse>
+		</control>
+		<control type="image" id="1">
+			<description>background media info</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>720</width>
 			<height>576</height>
 			<texture>bg_video.png</texture>
+			<animation effect="rotatey" center="1" start="180" end="360" time="700" loop="false" acceleration="0.3" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
+			<animation effect="rotatey" center="1" start="360" end="180" time="600" loop="false" acceleration="0.4" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 		</control>
+		<!-- <control type="image" id="0">
+			<description>contentpanel slice music background Music</description>
+			<posx>40</posx>
+			<posy>55</posy>
+			<width>640</width>
+			<height>466</height>
+			<aspectratio scalediffuse="false">scale</aspectratio>
+			<texture diffuse="Content_Panel_Diffuse.png" />
+			<info>Skin.String(VideoBackground)</info>
+			<visible>Skin.HasSetting(VideoBackground)</visible>
+			<visible>![!IsEmpty(Fanart.Image) + Skin.HasSetting(ShowFanart)]</visible>
+			<animation effect="rotatey" center="1" start="180" end="360" time="700" loop="false" acceleration="0.3" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
+			<animation effect="rotatey" center="1" start="360" end="180" time="600" loop="false" acceleration="0.4" condition="!Skin.HasSetting(animated)">WindowClose</animation>
+		</control> -->
 		<!--  Video Infos!-->
 		<control type="image" id="1">
 			<description>Video cover</description>
@@ -36,6 +62,7 @@
 			<posy>125</posy>
 			<width>430</width>
 			<height>245</height>
+			<aspectratio>keep</aspectratio>
 		</control>
 		<control type="image" id="1">
 			<description>Videowindow over videoinfo</description>
@@ -123,7 +150,7 @@
 			<label>$INFO[VideoPlayer.Duration]</label>
 			<align>right</align>
 		</control>
-		<control>
+		<!-- <control>
 			<description>bg preview</description>
 			<type>image</type>
 			<id>0</id>
@@ -132,6 +159,6 @@
 			<width>720</width>
 			<height>576</height>
 			<include>windowswitchtransition</include>
-		</control>
+		</control> -->
 	</controls>
 </window>
