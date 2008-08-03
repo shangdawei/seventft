@@ -281,9 +281,9 @@
 
   <control>
    <type>visualisation</type>
-   <posx>30</posx>
+   <posx>20</posx>
    <posy>30</posy>
-   <width>660</width>
+   <width>670</width>
    <height>516</height>
    <visible>!Skin.HasSetting(HomeViewToggle)</visible>
   </control>
@@ -348,6 +348,19 @@
    <animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
    <animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
   </control>
+  
+  <control type="image">
+			<description>last.fm status</description>
+			<posx>288</posx>
+			<posy>258</posy>
+			<width>26</width>
+			<height>34</height>   
+			<texture>last.fm-picture.png</texture>
+			<!-- <aspectratio align="left">keep</aspectratio> -->						
+			<visible>Player.HasAudio + LastFM.RadioPlaying + System.IdleTime(10)</visible>
+			
+						
+		</control>
 
    <control>
       <description>Progressbar</description>
@@ -436,15 +449,32 @@
   </control>
 
   <control>
+   <description>year label</description>
+   <type>label</type>
+   <id>1</id>
+   <posx>565</posx>
+   <posy>444</posy>
+   <width>430</width>
+   <label>$INFO[MusicPlayer.Year]</label>
+   <align>right</align>
+   <font>alwin28</font>
+   <textcolor>ff555555</textcolor>
+   <visible>System.IdleTime(10)</visible>
+   <animation effect="fade" time="200">VisibleChange</animation>
+   <animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
+   <animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
+  </control>
+  
+  <control>
    <description>Time label</description>
    <type>label</type>
    <id>1</id>
-   <posx>152</posx>
-   <posy>437</posy>
+   <posx>151</posx>
+   <posy>444</posy>
    <width>430</width>
    <label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
    <align>left</align>
-   <font>alwin20</font>
+   <font>idua24</font>
    <textcolor>ff888888</textcolor>
    <visible>System.IdleTime(10)</visible>
    <animation effect="fade" time="200">VisibleChange</animation>
@@ -521,7 +551,7 @@
 
  <!-- media infos (music) -->
 
-  <control>
+   <control>
    <description>music gradient</description>
    <type>image</type>
    <id>1</id>
@@ -537,9 +567,9 @@
    <description>cover image shadow</description>
    <type>image</type>
    <id>1</id>
-   <posx>562</posx>
-   <posy>348</posy>
-   <width>90</width>
+   <posx>560</posx>
+   <posy>347</posy>
+   <width>76</width>
    <height>113</height>
    <texture>rahmen3.png</texture>
    <include>homemediainfo</include>
@@ -551,7 +581,7 @@
    <id>1</id>
    <posx>555</posx>
    <posy>338</posy>
-   <width>90</width>
+   <width>76</width>
    <height>99</height>
    <info>MusicPlayer.Cover</info>
    <include>homemediainfo</include>
@@ -564,7 +594,7 @@
    <id>1</id>
    <width>400</width>
    <posx>540</posx>
-   <posy>340</posy>
+   <posy>338</posy>
    <info>MusicPlayer.Artist</info>
    <align>right</align>
    <font>special12</font>
@@ -602,12 +632,24 @@
    <type>label</type>
    <id>1</id>
    <posx>540</posx>
-   <posy>416</posy>
+   <posy>418</posy>
    <label>$INFO[MusicPlayer.Time]$INFO[MusicPlayer.Duration, / ]</label>
    <align>right</align>
    <font>font10</font>
    <include>homemediainfo</include>
   </control>
+  
+  <control type="image">
+			<description>last.fm status</description>
+			<posx>515</posx>
+			<posy>438</posy>
+			<width>26</width>
+			<height>38</height>  
+			<texture>lastfm.png</texture>
+			<aspectratio align="left">keep</aspectratio>			
+			<visible>Player.HasAudio + LastFM.RadioPlaying</visible>
+			<include>homemediainfo</include>			
+		</control>
 
 <!-- Drive Space Info C: E: F:-->
 
@@ -625,18 +667,20 @@
    <include>homestatsinfo</include>
      </control>
 
- <control>
+ 
+  
+  <control>
    <description>cover image shadow</description>
    <type>image</type>
    <id>1</id>
    <posx>560</posx>
-   <posy>348</posy>
-   <width>90</width>
-   <height>107</height>
+   <posy>347</posy>
+   <width>76</width>
+   <height>113</height>
    <texture>rahmen3.png</texture>
    <visible>Control.HasFocus(6) + !Skin.HasSetting(homepageDriveinfo1)</visible>
    <include>homestatsinfo</include>
-  </control>
+  </control> 
 
   <control>
    <description>drive image</description>
@@ -644,7 +688,7 @@
    <id>1</id>
    <posx>555</posx>
    <posy>338</posy>
-   <width>90</width>
+   <width>76</width>
    <height>99</height>
    <texture>homeinfo-bgdrive.png</texture>
    <visible>Control.HasFocus(6) + !Skin.HasSetting(homepageDriveinfo1)</visible>
@@ -734,6 +778,8 @@
    <visible>Control.HasFocus(6) + Skin.HasSetting(homepageDriveinfo2)</visible>
    <include>homestatsinfo</include>
   </control>
+  
+   
 
   <control>
    <description>drive image</description>
@@ -741,7 +787,7 @@
    <id>1</id>
    <posx>555</posx>
    <posy>338</posy>
-   <width>90</width>
+   <width>76</width>
    <height>99</height>
    <texture>homeinfo-bgdrive.png</texture>
    <visible>Control.HasFocus(6) + Skin.HasSetting(homepageDriveinfo2)</visible>
@@ -819,18 +865,20 @@
     <include>homestatsinfo</include>
      </control>
   
- <control>
+
+  
+  <control>
    <description>cover image shadow</description>
    <type>image</type>
    <id>1</id>
    <posx>560</posx>
-   <posy>348</posy>
-   <width>90</width>
-   <height>107</height>
+   <posy>347</posy>
+   <width>76</width>
+   <height>113</height>
    <texture>rahmen3.png</texture>
    <visible>Control.HasFocus(9) + !Skin.HasSetting(homepageSysteminfo)</visible>
    <include>homestatsinfo</include>
-  </control>
+  </control> 
 
   <control>
    <description>settings image</description>
@@ -838,7 +886,7 @@
    <id>1</id>
    <posx>555</posx>
    <posy>338</posy>
-   <width>90</width>
+   <width>76</width>
    <height>99</height>
    <texture>homeinfo-system.png</texture>
    <visible>Control.HasFocus(9) + !Skin.HasSetting(homepageSysteminfo)</visible>
@@ -916,18 +964,20 @@
      <include>homestatsinfo</include>
      </control>
 
+  
+  
   <control>
    <description>cover image shadow</description>
    <type>image</type>
    <id>1</id>
    <posx>560</posx>
-   <posy>348</posy>
-   <width>90</width>
-   <height>107</height>
+   <posy>347</posy>
+   <width>76</width>
+   <height>113</height>
    <texture>rahmen3.png</texture>
    <visible>Control.HasFocus(7) + Weather.IsFetched + !Skin.HasSetting(homepageWeatherinfo)</visible>
    <include>homestatsinfo</include>
-  </control> 
+  </control>
 
   <control>
    <description>Weather image bg</description>
@@ -935,7 +985,7 @@
    <id>1</id>
    <posx>555</posx>
    <posy>338</posy>
-   <width>90</width>
+   <width>76</width>
    <height>99</height>
    <texture>homeinfo-bg.png</texture>
    <visible>Control.HasFocus(7) + Weather.IsFetched + !Skin.HasSetting(homepageWeatherinfo)</visible>
@@ -961,7 +1011,7 @@
    <id>1</id>
    <posx>555</posx>
    <posy>338</posy>
-   <width>90</width>
+   <width>76</width>
    <height>99</height>
    <texture>homeinfo-overlay.png</texture>
    <visible>Control.HasFocus(7) + Weather.IsFetched + !Skin.HasSetting(homepageWeatherinfo)</visible>
@@ -1348,7 +1398,7 @@
  <animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 </control>
    
-   <include>LastFMLOGO</include>
+  
 
    <control>
     <description>My Pictures normal push button</description>
@@ -1442,18 +1492,19 @@
    <type>button</type>
    <id>97</id>
    <posx>373</posx>
-   <posy>522</posy>
+   <posy>526</posy>
    <width>26</width>
-   <height>43</height>
+   <height>34</height>
    <label>-</label>
-   <texturefocus>lastfm.png</texturefocus>
-   <texturenofocus>lastfmnotplaying.png</texturenofocus>   
+   <texturefocus>lastfm-home-button.png</texturefocus>
+   <texturenofocus>lastfm-home-button-NF.png</texturenofocus>   
    <onclick>XBMC.ActivateWindow(MyMusicLibrary,lastfm://)</onclick>  
    <!-- <include>homemisc</include> -->
    <onleft>447</onleft>
    <onright>95</onright>
    <onup>5</onup>
    <ondown>3</ondown>
+   <visible allowhiddenfocus="true">![Player.HasAudio + System.IdleTime(8)]</visible>
    <animation effect="zoom" start="100" end="120" center="auto" time="80">focus</animation>
    <animation effect="zoom" start="120" end="100" center="auto" time="80">unfocus</animation>
    </control>

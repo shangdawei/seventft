@@ -1447,22 +1447,22 @@
    <type>button</type>
    <id>97</id>
    <posx>373</posx>
-   <posy>523</posy>
-   <width>36</width>
-   <height>41</height>
+   <posy>527</posy>
+   <width>27</width>
+   <height>32</height>
    <label>-</label>
-   <texturefocus>lastfm.png</texturefocus>
-   <texturenofocus>lastfmnotplaying.png</texturenofocus>   
+   <texturefocus>lastfm-home-button.png</texturefocus>
+   <texturenofocus>lastfm-home-button-NF.png</texturenofocus>   
    <onclick>XBMC.ActivateWindow(MyMusicLibrary,lastfm://)</onclick>  
    <!-- <include>homemisc</include> -->
    <onleft>447</onleft>
    <onright>95</onright>
    <onup>5</onup>
    <ondown>3</ondown>
+   <visible allowhiddenfocus="true">![Player.HasAudio + System.IdleTime(8)]</visible>
    <animation effect="zoom" start="100" end="120" center="auto" time="80">focus</animation>
    <animation effect="zoom" start="120" end="100" center="auto" time="80">unfocus</animation>
    </control>
-
 
  <control>
    <description>dvd-rom launch button</description>
