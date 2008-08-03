@@ -64,7 +64,7 @@
 				<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-0.8" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 				<animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 			</control>
-			<include>resolutionlogo</include>
+			
 			<control type="button" id="12">
 				<description>Home Settings</description>
 				<posx>641</posx>
