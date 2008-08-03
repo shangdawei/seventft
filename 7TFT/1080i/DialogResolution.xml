@@ -4,10 +4,19 @@
 			<description>hdtv logo</description>      
 			<texture>1080i.png</texture>
 			<!-- <visible>Skin.HasSetting(resolution)</visible> -->
-			<posx>351</posx>
-			<posy>518</posy>
+			<posx>316</posx>
+			<posy>528</posy>
+			<width>130</width>
+			<height>36</height>
+		</control>
+		<control type="image" id="1">
+			<description>180i logo bg</description>      
+			<texture>OverlayWindowCloseTime_old.png</texture>
+			<!-- <visible>Skin.HasSetting(resolution)</visible> -->
+			<posx>318</posx>
+			<posy>528</posy>
 			<width>86</width>
-			<height>23</height>
+			<height>40</height>
 		</control>
 	</include>
 </includes>

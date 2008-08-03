@@ -18,6 +18,7 @@
   </control>
 
   <include>custombg</include>
+  <include>resolutionlogo</include>
   
   <control>
       <description>Progressbar</description>
