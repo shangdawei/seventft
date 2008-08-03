@@ -230,7 +230,7 @@
 			<lefttexture>-</lefttexture>
 			<midtexture>progress-info-midtexture_default_volumebar-mid.png</midtexture>
 			<righttexture>-</righttexture>
-			<overlaytexture>progress-info-overlaytexture_default_volumebar-mid.png</overlaytexture>
+			<overlaytexture>prog-overlaytexture_default_volumebar-mid.png</overlaytexture>
 			<visible>!Window.IsActive(0) + !Window.IsActive(500) + !Window.IsActive(501) + !Window.IsActive(502) + !Window.IsActive(2333) + !Window.IsActive(34) + !Window.IsActive(130) + !Window.IsActive(56) + !Window.IsActive(4) + !Window.IsActive(12) + !Window.IsActive(2003) + !Window.IsActive(2600) + !Window.IsActive(20) + !Window.IsActive(1) + !Window.IsActive(2) + !Window.IsActive(24) + !Window.IsActive(28) + !Window.IsActive(25) + !Window.IsActive(2555)</visible>
 
 
