@@ -236,6 +236,8 @@
 			<control type="group">
 				<visible>Control.IsVisible(54) + Container.OnNext</visible>
 				<animation effect="slide" end="-60,0" time="200" reversible="false">Hidden</animation>
+				
+				
 				<control type="image">
 					<posx>260</posx>
 					<posy>0</posy>
@@ -264,6 +266,17 @@
 					<animation effect="rotatey" center="220" start="0" end="-60" time="200" reversible="false">Hidden</animation>
 				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
 				</control>
+				<!-- eingefuegt -->
+				<!-- <control type="image">
+			<posx>260</posx>
+					<posy>0</posy>
+					<width>200</width>
+					<height>275</height>
+				<aspectratio>stretch</aspectratio>
+			<texture border="40">blackblack3.png</texture>
+			<visible>Container.OnNext</visible>
+		</control> -->
+		<!-- eingefuegt -->
 				<control type="image">
 					<posx>370</posx>
 					<posy>0</posy>
@@ -795,6 +808,15 @@
 				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
 				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
 			</control>
+			<!-- <control type="image">
+			<posx>260</posx>
+				<posy>275</posy>
+				<width>200</width>
+				<height>275</height>
+				<aspectratio>stretch</aspectratio>
+			<texture border="40">blackblack4.png</texture>
+			<visible>!Contol.HasFocus(54)</visible>
+		</control> -->
 			<control type="image">
 				<posx>260</posx>
 				<posy>0</posy>
@@ -804,6 +826,7 @@
 				<visible>!Contol.HasFocus(54)</visible>
 				<texture>background2.png</texture>
 			</control>
+			
 			<control type="image">
 				<posx>260</posx>
 				<posy>0</posy>
@@ -814,6 +837,15 @@
 				<info>Container.ListItem(0).Icon</info>
 			</control>
 			<control type="image">
+			<posx>260</posx>
+				<posy>0</posy>
+				<width>200</width>
+				<height>275</height>
+				<aspectratio>stretch</aspectratio>
+			<texture border="40">blackblack4.png</texture>
+			<visible>!Contol.HasFocus(54)</visible>
+		</control>
+			<control type="image">
 				<posx>260</posx>
 				<posy>275</posy>
 				<width>200</width>
@@ -822,6 +854,7 @@
 				<visible>!Contol.HasFocus(54)</visible>
 				<texture flipy="true" >background2.png</texture>
 			</control>
+			
 			<control type="image">
 				<posx>260</posx>
 				<posy>275</posy>
@@ -832,6 +865,7 @@
 				<info>Container.ListItem(0).Icon</info>
 				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
 			</control>
+			
 	</control>
 
 
