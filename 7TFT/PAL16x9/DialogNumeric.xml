@@ -17,6 +17,7 @@
 			<height>576</height>
 			<texture>bg_nummernfeld_16x9.jpg</texture>
 		</control>
+		<include>custombg</include>
 		<!-- <control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
