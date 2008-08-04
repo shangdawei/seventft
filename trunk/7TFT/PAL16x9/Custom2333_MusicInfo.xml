@@ -51,8 +51,8 @@
 			<description>description label</description>
 			<type>label</type>
 			<id>1</id>
-			<posx>148</posx>
-			<posy>87</posy>
+			<posx>10</posx>
+			<posy>16</posy>
 			<align>left</align>
 			<label>Playing now...</label>
 			<font>eth24</font>

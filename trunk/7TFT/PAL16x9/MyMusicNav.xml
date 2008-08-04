@@ -290,13 +290,14 @@
     <label>589</label>
     <font>font10</font>
     <textcolor>017cfc00</textcolor>
-    <texturefocus>partymodus.gif</texturefocus>
-    <texturenofocus>partymodus_nofocus.png</texturenofocus>
+    <texturefocus>partymodus-music.png</texturefocus>
+ 	<texturenofocus>partymodus_nofocus_home.png</texturenofocus>
     <onleft>8</onleft>
     <onright>19</onright>
-    <onup>17</onup>
+    <onup>50</onup>
     <ondown>2</ondown>
-    
+    <animation effect="zoom" start="100" end="140" center="auto" time="80">focus</animation>
+		<animation effect="zoom" start="140" end="100" center="auto" time="80">unfocus</animation>
    </control>
 
 
