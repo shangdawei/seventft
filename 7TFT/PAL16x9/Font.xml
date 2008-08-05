@@ -358,6 +358,13 @@
 			<aspect>0.90</aspect>
 		</font>
 		<font>
+			<name>idua30bold</name>
+			<filename>idua.ttf</filename>
+			<size>30</size>
+			<style>bold</style>
+			<shadow>ff000000</shadow>
+		</font>
+		<font>
 			<name>idua40aspect</name>
 			<filename>idua.ttf</filename>
 			<size>56</size>

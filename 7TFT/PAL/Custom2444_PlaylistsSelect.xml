@@ -1,3 +1,4 @@
+
 <window type="dialog" id="2444">
 	<defaultcontrol always="true">1109</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
@@ -60,9 +61,9 @@
 			<alignx>center</alignx>
 			<aligny>top</aligny>
 			<textoffsetx>30</textoffsetx>
-			<textoffsety>14</textoffsety>
-			<texturefocus>TV-series-button-focus3.png</texturefocus>
-			<texturenofocus>TV-series-button-nofocus2.png</texturenofocus>
+			<textoffsety>14</textoffsety>			
+			<texturefocus>TV-series-button-focus3.png</texturefocus> 		
+			<texturenofocus>TV-series-button-nofocus2.png</texturenofocus>			
 			<animation effect="zoom" start="100" end="106" center="auto" time="80">focus</animation>
 			<animation effect="zoom" start="106" end="100" center="auto" time="80">unfocus</animation>
 		</control>
