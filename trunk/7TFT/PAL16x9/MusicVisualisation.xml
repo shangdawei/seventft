@@ -37,7 +37,6 @@
 			<visible>Player.ShowInfo</visible>
 			<visible>!LastFM.RadioPlaying</visible>
 			<animation effect="fade" time="600">VisibleChange</animation>
-			
 			<animation effect="slide" time="500" start="0,-300" end="0,0" acceleration="-1.1" delay="750" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 			<animation effect="slide" time="500" start="0,0" end="0,-300" acceleration="1.3" delay="400" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 		</control>
@@ -130,14 +129,9 @@
 			<height>206</height>
 			<info>MusicPlayer.Cover</info>
 			<visible>Player.ShowInfo</visible>
-			
 			<animation effect="fade" time="600">VisibleChange</animation>
-			
 			<animation effect="slide" time="500" start="0,-300" end="0,0" acceleration="-1.1" delay="50" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 			<animation effect="slide" time="500" start="0,0" end="0,-300" acceleration="1.3" delay="100" condition="!Skin.HasSetting(animated)">WindowClose</animation>
-		
-			
-			
 		</control>
 		<control>
 			<description>cover image cd_case front</description>
@@ -371,20 +365,34 @@
 		<control>
 			<description>Volume Label</description>
 			<type>label</type>
-			<width>300</width>
-			<posx>500</posx>
-			<posy>400</posy>
+			<posx>650</posx>
+			<posy>474</posy>
+			<width>64</width>			
 			<align>right</align>
-			<font>alwin34</font>
+			<font>idua14</font>
 			<textcolor>FF7cfc00</textcolor>
 			<shadow>ff111111</shadow>
 			<label>$INFO[Player.Volume]</label>
 			<include>zoom</include>
 			<visible>Player.ShowInfo</visible>
-			<visible>![Player.HasAudio + System.IdleTime(7)]</visible>
-			<animation effect="fade" time="1000">VisibleChange</animation>
+			<visible>![Player.HasAudio + System.IdleTime(4)]</visible>
+			<animation effect="fade" time="800">VisibleChange</animation>
 			<animation effect="slide" time="500" start="600,0" end="0,0" acceleration="-1.1" delay="0" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 			<animation effect="slide" time="500" start="0,0" end="600,0" acceleration="1.3" delay="0" condition="!Skin.HasSetting(animated)">WindowClose</animation>
+		</control>
+		<control>
+			<description>Year label</description>
+			<type>label</type>
+			<id>0</id>
+			<posx>256</posx>
+			<posy>512</posy>
+			<label>$INFO[MusicPlayer.Year]</label>
+			<font>idua30bold</font>
+			<textcolor>FFdcd563</textcolor>
+			<align>right</align>
+			<visible>Player.ShowInfo</visible>
+			<include>zoom</include>
+			<animation effect="fade" time="1000">VisibleChange</animation>
 		</control>
 		<control>
 			<description>Uhr label</description>
@@ -425,6 +433,7 @@
 			<include>zoom</include>
 			<visible>Player.ShowInfo</visible>
 			<info>musicplayer.rating</info>
+			<animation effect="fade" time="800">VisibleChange</animation>
 		</control>
 		<control>
 			<description>System.CPUTemperature</description>
@@ -472,6 +481,35 @@
 			<include>zoom</include>
 			<visible>Player.ShowInfo + Player.HasAudio</visible>
 		</control>
-		<include>LastFMLOGO</include>
+		<control type="image">
+		<description>last.fm status on off</description>
+			<posx>190</posx>
+			<posy>510</posy>
+			<width>34</width>
+			<height>46</height>
+			<texture>lastfm.png</texture>
+			<aspectratio align="left">keep</aspectratio>			
+			<visible>Player.ShowInfo + LastFM.RadioPlaying</visible>
+			<include>zoom</include>
+			<animation effect="fade" time="800">VisibleChange</animation>
+		</control>
+		<!-- volume minibar -->
+		<control type="progress">
+			<description>progress control volume</description>
+			<posx>657</posx>
+			<posy>471</posy>
+			<width>44</width>
+			<height>28</height>
+			<info>Player.Volume</info>
+			<texturebg>volume_rahmen.png</texturebg>
+			<lefttexture>-</lefttexture>
+			<midtexture>volume_midddle3.png</midtexture>
+			<righttexture>-</righttexture>
+			<overlaytexture>-</overlaytexture>
+			<visible>Player.ShowInfo + Player.HasAudio</visible>
+			<include>zoom</include>
+			<animation effect="fade" time="800">VisibleChange</animation>
+		</control>
+
 	</controls>
 </window>

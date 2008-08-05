@@ -170,8 +170,8 @@
 			<width>120</width>
 			<height>80</height>
 			<imagepath>working</imagepath>
-			<timeperimage>50</timeperimage>
-			<randomize>-</randomize>
+			<timeperimage>80</timeperimage>
+			<randomize>false</randomize>
 			<fadetime>1</fadetime>
 			<colordiffuse>99ffffff</colordiffuse>
 			<aspectratio aligny="bottom">keep</aspectratio>
