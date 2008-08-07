@@ -384,12 +384,12 @@
 			<description>Year label</description>
 			<type>label</type>
 			<id>0</id>
-			<posx>256</posx>
+			<posx>186</posx>
 			<posy>512</posy>
 			<label>$INFO[MusicPlayer.Year]</label>
 			<font>idua30bold</font>
 			<textcolor>FFdcd563</textcolor>
-			<align>right</align>
+			<align>left</align>
 			<visible>Player.ShowInfo</visible>
 			<include>zoom</include>
 			<animation effect="fade" time="1000">VisibleChange</animation>
@@ -429,7 +429,7 @@
 			<height>32</height>
 			<width>146</width>
 			<posx>20</posx>
-			<posy>514</posy>
+			<posy>512</posy>
 			<include>zoom</include>
 			<visible>Player.ShowInfo</visible>
 			<info>musicplayer.rating</info>
@@ -441,6 +441,7 @@
 			<id>1</id>
 			<posx>360</posx>
 			<posy>453</posy>
+			
 			<info>System.CPUTemperature</info>
 			<font>alwin24</font>
 			<textcolor>ffaaaaaa</textcolor>
@@ -455,8 +456,9 @@
 			<type>label</type>
 			<id>1</id>
 			<posx>360</posx>
-			<posy>483</posy>
+			<posy>484</posy>
 			<info>System.GPUTemperature</info>
+			
 			<font>alwin24</font>
 			<textcolor>ffaaaaaa</textcolor>
 			<align>left</align>
@@ -509,6 +511,40 @@
 			<visible>Player.ShowInfo + Player.HasAudio</visible>
 			<include>zoom</include>
 			<animation effect="fade" time="800">VisibleChange</animation>
+		</control>
+		<control type="progress">
+			<description>progress control memory</description>
+			<posx>432</posx>
+			<posy>522</posy>
+			<width>64</width>
+			<height>16</height>
+			<info>System.FreeMemory</info>
+			<texturebg>volume_rahmen.png</texturebg>
+			<lefttexture>-</lefttexture>
+			<midtexture>volume_midddle4.png</midtexture>
+			<righttexture>-</righttexture>
+			<overlaytexture>-</overlaytexture>
+			<visible>Player.ShowInfo + Player.HasAudio</visible>
+			
+			<animation effect="fade" time="1000">VisibleChange</animation>
+			<animation effect="slide" time="500" start="900,0" end="0,0" acceleration="-1.1" delay="0"    condition="!Skin.HasSetting(animated)">WindowOpen</animation>
+			<animation effect="slide" time="500" start="0,0" end="600,0" acceleration="1.3" delay="0"    condition="!Skin.HasSetting(animated)">WindowClose</animation>
+		</control>
+		<control>
+			<description>memory label</description>
+			<type>label</type>
+			<id>0</id>
+			<posx>360</posx>
+			<posy>515</posy>
+			<label>$INFO[System.FreeMemory]</label>
+			<font>alwin24</font>
+			<textcolor>ffaaaaaa</textcolor>
+			<align>left</align>
+			<visible>Player.ShowInfo</visible>
+			
+			<animation effect="fade" time="1000">VisibleChange</animation>
+			<animation effect="slide" time="500" start="900,0" end="0,0" acceleration="-1.1" delay="0"    condition="!Skin.HasSetting(animated)">WindowOpen</animation>
+			<animation effect="slide" time="500" start="0,0" end="600,0" acceleration="1.3" delay="0"    condition="!Skin.HasSetting(animated)">WindowClose</animation>
 		</control>
 
 	</controls>

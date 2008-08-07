@@ -28,7 +28,7 @@
 			<label>Playing now...</label>
 			<font>eth24</font>
 			<textcolor>907cfc00</textcolor>
-			<include>contentpanelslide</include>
+			<!-- <include>contentpanelslide</include> -->
 		</control>
 		<!--  Music Informationen!-->
 		<control type="image" id="1">
@@ -50,10 +50,10 @@
 		</control>
 		<control type="label" id="1">
 			<description>Random Status</description>
-			<posx>680</posx>
-			<posy>16</posy>
-			<label>$INFO[Playlist.Random]</label>
-			<font>eth20</font>
+			<posx>706</posx>
+			<posy>15</posy>
+			<label>Random - $INFO[Playlist.Random]</label>
+			<font>alwin22</font>
 			<align>right</align>
 			<textcolor>70ffffff</textcolor>
 		</control>
@@ -219,24 +219,24 @@
 			<visible>MusicPartyMode.Enabled</visible>
 		</control>
 		<control type="image">
-			<posx>510</posx>
-			<posy>70</posy>
-			<width>96</width>
-			<height>96</height>
+			<posx>334</posx>
+			<posy>428</posy>
+			<width>48</width>
+			<height>56</height>
 			<texture>lastfm.png</texture>
 			<aspectratio align="left">keep</aspectratio>			
 			<visible>Player.HasAudio + LastFM.RadioPlaying</visible>
 		</control>
 		<control type="image">
-			<posx>510</posx>
-			<posy>70</posy>
-			<width>96</width>
-			<height>96</height>
+			<posx>334</posx>
+			<posy>428</posy>
+			<width>48</width>
+			<height>56</height>
 			<texture>lastfmnotplaying.png</texture>
 			<aspectratio align="left">keep</aspectratio>			
 			<visible>!LastFM.RadioPlaying</visible>
 		</control>
-		<control>
+		<!-- <control>
 			<description>bg preview</description>
 			<type>image</type>
 			<id>0</id>
@@ -245,6 +245,6 @@
 			<width>720</width>
 			<height>576</height>
 			<include>windowswitchtransition</include>
-		</control>
+		</control> -->
 	</controls>
 </window>
