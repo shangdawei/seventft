@@ -3,7 +3,7 @@
  <id>127</id>
  <defaultcontrol>1</defaultcontrol>
  <visible>Window.IsActive(127)</visible>
- <include>dialogeffect</include>
+ <include>zoom</include>
 
  <coordinates>
   <system>1</system>
@@ -32,7 +32,7 @@
    <posy>-22</posy>
    <width>496</width>
    <height>425</height>
-   <texture>dialog-panel2_fcb.png</texture>
+   <texture border="40">voulume-panel-bg.png</texture>
   </control>
 
   <control>
