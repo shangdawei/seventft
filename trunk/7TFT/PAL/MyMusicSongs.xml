@@ -187,6 +187,7 @@
  <animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 </control>
  
+
    
 
    
