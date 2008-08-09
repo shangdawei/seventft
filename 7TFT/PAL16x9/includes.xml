@@ -2,6 +2,7 @@
    
 	<include file="defaults.xml" />
 	<include file="3D_CoverView.xml" />
+	<include file="3D_CoverWheel.xml" />
     <include file="CommonViewTypes_MegaBigThumb_MUSIK.xml" />	
 	<include file="CommonViewTypes_MegaBigThumb_PICTURE.xml" />
 	<include file="CommonViewTypes_MegaBigThumb_VIDEO.xml" />
@@ -10,7 +11,7 @@
 	<include file="CommonViewTypes_Library.xml" />
 	<include file="CommonViewTypes_Dialogs.xml" />
 	<include file="Backgrounds.xml" />
-	
+	<include file="Custom8156_POPUP.xml" />	
 	<include file="DialogResolution.xml" />
 	   
 		<include name="textcolorwhite">
