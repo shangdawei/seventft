@@ -317,8 +317,9 @@
   <include>BigWrapList2</include>
   <include>BigWideVideo</include>
   <include>MegaBigThumb169Programs</include>
-  <include>3D Big</include>
   <include>3D_Cover_View</include>
+  <include>3D Big</include>
+  
   <include>WrapOverlayScripts</include>
 
   <control>
