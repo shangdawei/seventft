@@ -505,8 +505,9 @@
   <include>BigWrapList</include>
   <include>BigWrapList2</include>
   <include>MegaBigThumb169Picture</include>
-  <include>3D Big</include>
+  
   <include>3D_Cover_View</include>
+  <include>3D Big</include>
   <include>WrapOverlayPictures</include>
   
   <control>
