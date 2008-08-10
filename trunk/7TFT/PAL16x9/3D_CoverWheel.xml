@@ -8,9 +8,9 @@
 			</coordinates> -->
 -			<!-- <visible>Window.IsVisible(MusicFiles) | Container.Content(Albums) | Container.Content(Artists)</visible> -->
 			<posx>144</posx>
-			<posy>316</posy>
+			<posy>312</posy>
 			<width>448</width>
-			<height>146</height>
+			<height>155</height>
 			<onleft>2</onleft>
 			<onright>61</onright>
 			<onup>58</onup>
@@ -19,7 +19,7 @@
 			<pagecontrol>61</pagecontrol>
 			<scrolltime>200</scrolltime>
 			<include>contentpanelslide</include>
--			<itemlayout height="29">
+-			<itemlayout height="32">
 -				<control type="image">
 					<posx>5</posx>
 					<posy>3</posy>
@@ -76,7 +76,7 @@
 					<visible>Container.Sort(SongRating)</visible>
 				</control>
 			</itemlayout>
--			<focusedlayout height="29">
+-			<focusedlayout height="32">
 -				<control type="image">
 					<width>440</width>
 					<height>29</height>
@@ -732,7 +732,7 @@ Control.IsVisible(58) + !Control.IsVisible(3001)  + !Control.IsVisible(3002)
 			<visible>Player.HasMedia + [Control.HasFocus(58)]</visible>
 			<include>OverlayWindowClose</include>
 		</control> -->
-		<control type="image">
+		<!-- <control type="image">
 			<posx>124</posx>
 			<posy>432</posy>
 			<width>18</width>
@@ -740,7 +740,7 @@ Control.IsVisible(58) + !Control.IsVisible(3001)  + !Control.IsVisible(3002)
 			<texture>play_wrap2.png</texture>
 			<visible>Player.Playing + [Control.HasFocus(54)]</visible>
 			<include>OverlayWindowClose</include>
-		</control>
+		</control> -->
 		<control>
 			<description>Uhr label</description>
 			<type>label</type>

@@ -1,955 +1,590 @@
-
 <includes>
-	<!-- 3D Big WrapList -->
-    
-	<include name="3D Big">	
-			
-		<control type="image">
-		 <posx>0</posx>
-    		 <posy>0</posy>
-     		 <width>720</width>
-     		 <height>576</height>
-     		 <texture>wrap overlay.png</texture>
-              <visible>Control.HasFocus(54)</visible>
-		</control>					
-			
-
-			<control type="group" id="3001">
-			<posy>95</posy>
-			<camera x="360" y="288" />
-			<visible>Control.IsVisible(54) + Container.OnNext</visible>
-                        <animation effect="slide" end="-50,0" time="200" reversible="false">Hidden</animation>
-			
-
-
-	
-
-			
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-5).Icon</info>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-5).Icon</info>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>50</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-4).Icon</info>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>50</posx>
-				<posy>375</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>50</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-4).Icon</info>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>100</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-3).Icon</info>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>100</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>100</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-3).Icon</info>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>150</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-2).Icon</info>
-				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>150</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>150</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-2).Icon</info>
-				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>570</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(4).Icon</info>
-				<animation effect="rotatey" center="810" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>570</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="810" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>570</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(4).Icon</info>
-				<animation effect="rotatey" center="810" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>520</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(3).Icon</info>
-				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>520</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>520</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(3).Icon</info>
-				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>470</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(2).Icon</info>
-				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>470</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>470</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(2).Icon</info>
-				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>420</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(1).Icon</info>
-				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>420</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>420</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>420</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(1).Icon</info>
-				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="group">
-				<visible>Control.IsVisible(54) + Container.OnNext</visible>
-				<animation effect="slide" end="-60,0" time="200" reversible="false">Hidden</animation>
-				
-				
-				<control type="image">
-					<posx>260</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>275</height>
-					<info>Container.ListItem(-1).Icon</info>
-					<visible>Container.OnNext</visible>
-					<animation effect="rotatey" center="220" start="0" end="-60" time="200" reversible="false">Hidden</animation>
+-	<include name="3D Big">
+-		<control type="list" id="54">
+-			<visible>
+Window.IsVisible(MusicFiles) | Container.Content(Albums) | Container.Content(Artists)
+			</visible>
+			<posx>190</posx>
+			<posy>290</posy>
+			<width>485</width>
+			<height>235</height>
+			<onleft>9000</onleft>
+			<onright>61</onright>
+			<onup>54</onup>
+			<ondown>54</ondown>
+			<viewtype label="3D $LOCALIZE[535]">list</viewtype>
+			<pagecontrol>61</pagecontrol>
+			<scrolltime>200</scrolltime>
+			<include>contentpanelslide</include>
+-			<itemlayout height="29">
+-				<control type="image">
+					<posx>5</posx>
+					<posy>3</posy>
+					<width>22</width>
+					<height>22</height>
+					<info>ListItem.Icon</info>
 				</control>
-				<control type="image">
-					<posx>260</posx>
-					<posy>275</posy>
-					<width>200</width>
-					<height>275</height>
-					<visible>Container.OnNext</visible>
-					<animation effect="rotatey" center="220" start="0" end="-60" time="200" reversible="false">Hidden</animation>
-				<texture flipy="true" >background2.png</texture>
+-				<control type="label">
+					<posx>30</posx>
+					<posy>3</posy>
+					<width>430</width>
+					<height>22</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<selectedcolor>green</selectedcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+					<visible>!Container.Sort(SongRating)</visible>
 				</control>
-				<control type="image">
-					<posx>260</posx>
-					<posy>275</posy>
-					<width>200</width>
-					<height>275</height>
-					<info>Container.ListItem(-1).Icon</info>
-					<visible>Container.OnNext</visible>
-					<animation effect="rotatey" center="220" start="0" end="-60" time="200" reversible="false">Hidden</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
+-				<control type="label">
+					<posx>475</posx>
+					<posy>3</posy>
+					<width>300</width>
+					<height>22</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<selectedcolor>green</selectedcolor>
+					<textcolor>grey</textcolor>
+					<align>right</align>
+					<info>ListItem.Label2</info>
+					<visible>!Container.Sort(SongRating)</visible>
 				</control>
-				<!-- eingefuegt -->
-				<!-- <control type="image">
-			<posx>260</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>275</height>
-				<aspectratio>stretch</aspectratio>
-			<texture border="40">blackblack3.png</texture>
-			<visible>Container.OnNext</visible>
-		</control> -->
-		<!-- eingefuegt -->
-				<control type="image">
-					<posx>370</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>275</height>
-					<texture>background2.png</texture>
-					<visible>Container.OnNext</visible>
-					<animation effect="rotatey" center="610" start="0" end="-60" time="200" reversible="false">Hidden</animation>
-					<animation effect="rotatey" center="610" start="60" end="60" time="200" condition="true">Conditional</animation>
-
+-				<control type="label">
+					<posx>30</posx>
+					<posy>3</posy>
+					<width>345</width>
+					<height>22</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<selectedcolor>green</selectedcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+					<visible>Container.Sort(SongRating)</visible>
 				</control>
-				<control type="image">
-					<posx>370</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>275</height>
-					<info>Container.ListItem(0).Icon</info>
-					<visible>Container.OnNext</visible>
-					<animation effect="rotatey" center="610" start="0" end="-60" time="200" reversible="false">Hidden</animation>
-					<animation effect="rotatey" center="610" start="60" end="60" time="200" condition="true">Conditional</animation>
-
+-				<control type="image" id="1">
+					<description>Song Rating Image</description>
+					<height>21</height>
+					<width>121</width>
+					<posx>380</posx>
+					<posy>4</posy>
+					<info>ListItem.StarRating</info>
+					<aspectratio>stretch</aspectratio>
+					<texture flipx="true"/>
+					<visible>Container.Sort(SongRating)</visible>
 				</control>
-				<control type="image">
-					<posx>370</posx>
-					<posy>275</posy>
-					<width>200</width>
-					<height>275</height>
-					<visible>Container.OnNext</visible>
-					<animation effect="rotatey" center="610" start="0" end="-60" time="200" reversible="false">Hidden</animation>
-					<animation effect="rotatey" center="610" start="60" end="60" time="200" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-
-				</control>
-				<control type="image">
-					<posx>370</posx>
-					<posy>275</posy>
-					<width>200</width>
-					<height>275</height>
-					<info>Container.ListItem(0).Icon</info>
-					<visible>Container.OnNext</visible>
-					<animation effect="rotatey" center="610" start="0" end="-60" time="200" reversible="false">Hidden</animation>
-					<animation effect="rotatey" center="610" start="60" end="60" time="200" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-
-				</control>
-			</control>
-
-		</control>
-		<control type="group" id="3002">
-			<posy>95</posy>
-			<camera x="360" y="288" />
-			<visible>Control.IsVisible(54) + Container.OnPrevious</visible>
-                        <animation effect="slide" end="50,0" time="200" reversible="false">Hidden</animation>
-			<control type="image">
-				<posx>-50</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-4).Icon</info>
-				<animation effect="rotatey" center="-90" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>-50</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="-90" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>-50</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-4).Icon</info>
-				<animation effect="rotatey" center="-90" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-3).Icon</info>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-3).Icon</info>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>50</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-2).Icon</info>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>50</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>50</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-2).Icon</info>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>100</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-1).Icon</info>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>100</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>100</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-1).Icon</info>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>520</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(5).Icon</info>
-				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>520</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>520</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(5).Icon</info>
-				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>470</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(4).Icon</info>
-				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>470</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>470</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(4).Icon</info>
-				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>420</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(3).Icon</info>
-				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>420</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>420</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(3).Icon</info>
-				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>370</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(2).Icon</info>
-				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>370</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>370</posx>
-					<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(2).Icon</info>
-				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="group">
-				<visible>Control.IsVisible(54) + Container.OnPrevious</visible>
-				<animation effect="slide" end="60,0" time="200" reversible="false">Hidden</animation>
-				<control type="image">
-					<posx>260</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>275</height>
-					<info>Container.ListItem(1).Icon</info>
-					<visible>Container.OnPrevious</visible>
-					<animation effect="rotatey" center="500" start="0" end="60" time="200" reversible="false">Hidden</animation>
-				</control>
-				<control type="image">
-					<posx>260</posx>
-					<posy>275</posy>
-					<width>200</width>
-					<height>275</height>
-					<visible>Container.OnPrevious</visible>
-					<animation effect="rotatey" center="500" start="0" end="60" time="200" reversible="false">Hidden</animation>
-				<texture flipy="true" >background2.png</texture>
-				</control>
-				<control type="image">
-					<posx>260</posx>
-					<posy>275</posy>
-					<width>200</width>
-					<height>275</height>
-					<info>Container.ListItem(1).Icon</info>
-					<visible>Container.OnPrevious</visible>
-					<animation effect="rotatey" center="500" start="0" end="60" time="200" reversible="false">Hidden</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-				</control>
-				<control type="image">
-					<posx>150</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>275</height>
-					<texture>background2.png</texture>
-					<visible>Container.OnPrevious</visible>
-					<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
-					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				</control>
-				<control type="image">
-					<posx>150</posx>
-					<posy>0</posy>
-					<width>200</width>
-					<height>275</height>
-					<info>Container.ListItem(0).Icon</info>
-					<visible>Container.OnPrevious</visible>
-					<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
-					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				</control>
-				<control type="image">
-					<posx>150</posx>
-					<posy>275</posy>
-					<width>200</width>
-					<height>275</height>
-					<visible>Container.OnPrevious</visible>
-					<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
-					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-				</control>
-				<control type="image">
-					<posx>150</posx>
-					<posy>275</posy>
-					<width>200</width>
-					<height>275</height>
-					<info>Container.ListItem(0).Icon</info>
-					<visible>Container.OnPrevious</visible>
-					<animation effect="rotatey" center="110" start="0" end="60" time="200" reversible="false">Hidden</animation>
-					<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-				</control>
-			</control>
-		</control>
-		<control type="group" id="3000">
-			<posy>95</posy>
-			<camera x="360" y="288" />
-			<visible>Control.IsVisible(54) + !Control.IsVisible(3001)  + !Control.IsVisible(3002)</visible>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-4).Icon</info>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>0</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-4).Icon</info>
-				<animation effect="rotatey" center="-40" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>50</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-3).Icon</info>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>50</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>50</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-3).Icon</info>
-				<animation effect="rotatey" center="10" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>100</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-2).Icon</info>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>100</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>100</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-2).Icon</info>
-				<animation effect="rotatey" center="60" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>150</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-1).Icon</info>
-				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>150</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>150</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(-1).Icon</info>
-				<animation effect="rotatey" center="110" start="-60" end="-60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>520</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(4).Icon</info>
-				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>520</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>520</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(4).Icon</info>
-				<animation effect="rotatey" center="760" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>470</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(3).Icon</info>
-				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>470</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>470</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(3).Icon</info>
-				<animation effect="rotatey" center="710" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>420</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(2).Icon</info>
-				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>420</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>420</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(2).Icon</info>
-				<animation effect="rotatey" center="660" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<control type="image">
-				<posx>370</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(1).Icon</info>
-				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>370</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			<control type="image">
-				<posx>370</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<info>Container.ListItem(1).Icon</info>
-				<animation effect="rotatey" center="610" start="60" end="60" time="0" condition="true">Conditional</animation>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			<!-- <control type="image">
-			<posx>260</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<aspectratio>stretch</aspectratio>
-			<texture border="40">blackblack4.png</texture>
-			<visible>!Contol.HasFocus(54)</visible>
-		</control> -->
-			<control type="image">
-				<posx>260</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<aspectratio>stretch</aspectratio>
-				<visible>!Contol.HasFocus(54)</visible>
-				<texture>background2.png</texture>
-			</control>
-			
-			<control type="image">
-				<posx>260</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<aspectratio>stretch</aspectratio>
-				<visible>!Contol.HasFocus(54)</visible>
-				<info>Container.ListItem(0).Icon</info>
-			</control>
-			<control type="image">
-			<posx>260</posx>
-				<posy>0</posy>
-				<width>200</width>
-				<height>275</height>
-				<aspectratio>stretch</aspectratio>
-			<texture border="40">blackblack4.png</texture>
-			<visible>!Contol.HasFocus(54)</visible>
-		</control>
-			<control type="image">
-				<posx>260</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<aspectratio>stretch</aspectratio>
-				<visible>!Contol.HasFocus(54)</visible>
-				<texture flipy="true" >background2.png</texture>
-			</control>
-			
-			<control type="image">
-				<posx>260</posx>
-				<posy>275</posy>
-				<width>200</width>
-				<height>275</height>
-				<aspectratio>stretch</aspectratio>
-				<visible>!Contol.HasFocus(54)</visible>
-				<info>Container.ListItem(0).Icon</info>
-				<texture flipy="true" diffuse="Thumb_Mask.png">-</texture>
-			</control>
-			
-	</control>
-
-
-<control type="scrollbar" id="90">
-    <posx>61</posx>
-    <posy>460</posy>
-    <width>598</width>
-    <height>10</height>
-    <texturesliderbackground>input-focus.png</texturesliderbackground>
-    <textureslidernib>scrollbar_nib.png</textureslidernib>
-	<textureslidernibfocus>scrollbar_nib_focus.png</textureslidernibfocus>
-    <onleft>90</onleft>
-    <onright>90</onright>
-    <onup>54</onup>
-    <ondown>2</ondown>
-    <showonepage>false</showonepage>
-    <orientation>horizontal</orientation>
-    <visible>Skin.HasSetting(sbar)</visible>
-  <visible>Control.IsVisible(54)</visible>
-   <visible>!Control.HasFocus(57)</visible>
-	</control>
-
-		<control type="wraplist" id="54">
-			<posx>-40</posx>
-			<posy>175</posy>
-			<width>760</width>
-			<height>275</height>
-			<onleft>54</onleft>
-			<onright>54</onright>
-			<onup>2</onup>
-			<ondown>90</ondown>
-			<scrolltime>0</scrolltime>
-			<viewtype label="3D Big">wraplist</viewtype>
-			<pagecontrol>90</pagecontrol> 
-			<focusposition>3</focusposition>
-			<orientation>horizontal</orientation>
-			<!---<include>Fade_Window_OpenClose_Animation</include>  --->
-			<itemlayout height="250" width="100">
 			</itemlayout>
-			<focusedlayout height="250"  width="200">
-				<control type="image">
+-			<focusedlayout height="29">
+-				<control type="image">
+					<width>485</width>
+					<height>29</height>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>200</width>
-					<height>275</height>
-				
-					<visible>!Control.IsVisible(3001)  + !Control.IsVisible(3002)</visible>
+					<visible>Control.HasFocus(54)</visible>
+					<texture>list-focus.png</texture>
+				</control>
+-				<control type="image">
+					<posx>5</posx>
+					<posy>3</posy>
+					<width>22</width>
+					<height>22</height>
+					<info>ListItem.Icon</info>
+				</control>
+-				<control type="label">
+					<posx>30</posx>
+					<posy>3</posy>
+					<width>430</width>
+					<height>22</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<selectedcolor>green</selectedcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+					<visible>!Container.Sort(SongRating)</visible>
+				</control>
+-				<control type="label">
+					<posx>475</posx>
+					<posy>3</posy>
+					<width>300</width>
+					<height>22</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<selectedcolor>green</selectedcolor>
+					<textcolor>grey</textcolor>
+					<align>right</align>
+					<info>ListItem.Label2</info>
+					<visible>!Container.Sort(SongRating)</visible>
+				</control>
+-				<control type="label">
+					<posx>30</posx>
+					<posy>3</posy>
+					<width>345</width>
+					<height>22</height>
+					<font>font13</font>
+					<aligny>center</aligny>
+					<selectedcolor>green</selectedcolor>
+					<align>left</align>
+					<info>ListItem.Label</info>
+					<visible>Container.Sort(SongRating)</visible>
+				</control>
+-				<control type="image" id="1">
+					<description>Song Rating Image</description>
+					<height>21</height>
+					<width>121</width>
+					<posx>380</posx>
+					<posy>4</posy>
+					<info>ListItem.StarRating</info>
 					<aspectratio>stretch</aspectratio>
+					<texture flipx="true"/>
+					<visible>Container.Sort(SongRating)</visible>
 				</control>
 			</focusedlayout>
 		</control>
-
-
-
-
-	
-	
-    <include>overlayswitch</include>
-	
-	
-	 <!-- equlizer -->   
-  
-	<control type="multiimage">
-       <description>equalizer </description>
-		<posx>480</posx>
-    	<posy>430</posy>
-		<width>108</width>
-		<height>36</height>
-		<imagepath>EQ</imagepath>
-		<timeperimage>50</timeperimage>
-		<randomize>true</randomize>
-		<fadetime>1</fadetime>		
-        <colordiffuse>95FFFFFFF</colordiffuse> 		
-		<animation effect="fade" time="100">VisibleChange</animation>
-		<visible>Control.HasFocus(54)</visible>
-	<visible>Player.HasAudio + !Player.Seeking + !Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
+-		<control type="button">
+			<posx>680</posx>
+			<posy>290</posy>
+			<include>scrollbar_width</include>
+			<height>20</height>
+			<onclick>PageUp(61)</onclick>
+			<texturefocus border="4">scrollbar_arrow_up_focus.png</texturefocus>
+			<texturenofocus border="4">scrollbar_arrow_up.png</texturenofocus>
+			<include>contentpanelslide</include>
+			<visible>Control.IsVisible(54) + Control.IsVisible(61)</visible>
+		</control>
+-		<control type="button">
+			<posx>680</posx>
+			<posy>500</posy>
+			<include>scrollbar_width</include>
+			<height>20</height>
+			<onclick>PageDown(61)</onclick>
+			<texturefocus border="4">scrollbar_arrow_down_focus.png</texturefocus>
+			<texturenofocus border="4">scrollbar_arrow_down.png</texturenofocus>
+			<include>contentpanelslide</include>
+			<visible>Control.IsVisible(54) + Control.IsVisible(61)</visible>
+		</control>
+-		<control type="scrollbar" id="61">
+			<posx>680</posx>
+			<posy>310</posy>
+			<include>scrollbar_width</include>
+			<height>190</height>
+			<texturesliderbackground border="4">scrollbar_background.png</texturesliderbackground>
+			<texturesliderbar border="4">scrollbar_bar.png</texturesliderbar>
+			<texturesliderbarfocus border="4">scrollbar_bar_focus.png</texturesliderbarfocus>
+			<textureslidernib>-</textureslidernib>
+			<textureslidernibfocus>-</textureslidernibfocus>
+			<onleft>50</onleft>
+			<onright>9000</onright>
+			<showonepage>false</showonepage>
+			<orientation>vertical</orientation>
+			<include>contentpanelslide</include>
+			<visible>Control.IsVisible(54)</visible>
+		</control>
+		<control type="group" id="2999">
+			<posx>-78</posx>
+			<posy>22</posy>
+			<visible>Control.IsVisible(54)</visible>
+-		<control type="group" id="3002">
+				<posx>250</posx>
+				<posy>120</posy>
+				<camera x="438.5252" y="185"/>
+				<visible>Control.IsVisible(54) + Container.OnPrevious</visible>
+				<include>contentpanelslide</include>
+				<animation effect="rotatey" center="438.5252" start="0" end="-22.5" time="200" reversible="false">Hidden</animation>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="11.25" end="-11.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="78.75" end="78.75" time="400" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(-2).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-123.75" end="-146.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(4).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-11.25" end="-33.75" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="78.75" end="78.75" time="400" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(-1).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-101.25" end="-123.75" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(3).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-33.75" end="-56.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(0).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-78.75" end="-101.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(2).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-56.25" end="-78.75" time="0" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="78.75" end="78.75" time="200" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(1).Icon</info>
+						</control>
+					</control>
+				</control>
 			</control>
-			
-		
-
-
-</include>
-
+-		<control type="group" id="3001">
+				<posx>250</posx>
+				<posy>120</posy>
+				<camera x="438.5252" y="185"/>
+				<visible>Control.IsVisible(54) + Container.OnNext</visible>
+				<include>contentpanelslide</include>
+				<animation effect="rotatey" center="438.5252" start="0" end="22.5" time="200" reversible="false">Hidden</animation>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="11.25" end="-11.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="78.75" end="78.75" time="400" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(-4).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-123.75" end="-146.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(2).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-11.25" end="-33.75" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="78.75" end="78.75" time="400" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(-3).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-101.25" end="-123.75" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(1).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-33.75" end="-56.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(-2).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-78.75" end="-101.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(0).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-56.25" end="-78.75" time="0" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="78.75" end="78.75" time="200" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(-1).Icon</info>
+						</control>
+					</control>
+				</control>
+			</control>
+-		<control type="group" id="3000">
+				<posx>250</posx>
+				<posy>120</posy>
+				<camera x="438.5252" y="185"/>
+				<include>contentpanelslide</include>
+-			<visible>
+Control.IsVisible(54) + !Control.IsVisible(3001)  + !Control.IsVisible(3002)
+				</visible>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="11.25" end="-11.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="78.75" end="78.75" time="400" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(-3).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-123.75" end="-146.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(3).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-11.25" end="-33.75" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="78.75" end="78.75" time="400" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(-2).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-101.25" end="-123.75" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(2).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-33.75" end="-56.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(-1).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-78.75" end="-101.25" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="90" end="78.75" time="1000" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(1).Icon</info>
+						</control>
+					</control>
+				</control>
+-			<control type="group">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>70</width>
+					<animation effect="rotatey" center="188.5252" start="-56.25" end="-78.75" time="400" condition="true">Conditional</animation>
+-				<control type="group">
+						<animation effect="rotatey" center="0" start="78.75" end="78.75" time="200" condition="true">Conditional</animation>
+-					<control type="image">
+							<posx>1</posx>
+							<posy>0</posy>
+							<width>70</width>
+							<height>130</height>
+							<keepaspectratio>true</keepaspectratio>
+							<info>Container.ListItem(0).Icon</info>
+						</control>
+					</control>
+				</control>
+			</control>
+		</control>
+-		<control type="image">
+			<posx>190</posx>
+			<posy>280</posy>
+			<width>510</width>
+			<height>10</height>
+			<texture>separator.png</texture>
+			<visible>Control.IsVisible(54)</visible>
+			<include>contentpanelslide</include>
+		</control>
+-		<control type="label">
+			<posx>200</posx>
+			<posy>255</posy>
+			<width>485</width>
+			<height>22</height>
+			<aligny>center</aligny>
+			<align>center</align>
+			<info>ListItem.Label</info>
+			<font>special13</font>
+			<visible>Control.IsVisible(54)</visible>
+			<include>contentpanelslide</include>
+		</control>
+	</include>
 </includes>
-
-
-

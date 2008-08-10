@@ -280,6 +280,7 @@
 		<include>BigWideVideo</include>
 		<include>MegaBigThumb43Programs</include>
 		<include>3D Big</include>
+		<include>3D_Cover_View</include>
 		<include>WrapOverlayGameSaves</include>
 		<control>
 			<description>Progressbar</description>
