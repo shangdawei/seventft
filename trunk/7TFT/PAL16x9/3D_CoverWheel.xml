@@ -7,10 +7,10 @@
 				<posx>-200</posx>
 				<posy>0</posy>
 			</coordinates> -->
--			<visible>Window.IsVisible(MusicFiles) | Container.Content(Albums) | Container.Content(Artists)</visible>
-			<posx>160</posx>
+-			<!-- <visible>Window.IsVisible(MusicFiles) | Container.Content(Albums) | Container.Content(Artists)</visible> -->
+			<posx>144</posx>
 			<posy>316</posy>
-			<width>428</width>
+			<width>448</width>
 			<height>146</height>
 			<onleft>2</onleft>
 			<onright>61</onright>
@@ -31,25 +31,24 @@
 -				<control type="label">
 					<posx>30</posx>
 					<posy>3</posy>
-					<width>430</width>
+					<width>400</width>
 					<height>22</height>
 					<font>idua18</font>
 					<aligny>center</aligny>
-					<selectedcolor>green</selectedcolor>
+					<include>textcolorligreenfocus</include>
 					<align>left</align>
 					<info>ListItem.Label</info>
 					<visible>!Container.Sort(SongRating)</visible>
 				</control>
 -				<control type="label">
-					<posx>475</posx>
+					<posx>425</posx>
 					<posy>3</posy>
 					<width>300</width>
 					<height>22</height>
 					<font>idua18</font>
 					<aligny>center</aligny>
-					<selectedcolor>green</selectedcolor>
-
-					<textcolor>grey</textcolor>
+					<include>textcolorligreenfocus</include>
+					<include>textcolorgrey</include>
 					<align>right</align>
 					<info>ListItem.Label2</info>
 					<visible>!Container.Sort(SongRating)</visible>
@@ -61,26 +60,26 @@
 					<height>22</height>
 					<font>idua18</font>
 					<aligny>center</aligny>
-					<selectedcolor>green</selectedcolor>
+					<include>textcolorligreenfocus</include>
 					<align>left</align>
 					<info>ListItem.Label</info>
 					<visible>Container.Sort(SongRating)</visible>
 				</control>
 -				<control type="image" id="1">
 					<description>Song Rating Image</description>
-					<height>21</height>
-					<width>121</width>
-					<posx>380</posx>
-					<posy>4</posy>
-					<info>ListItem.StarRating</info>
-					<aspectratio>stretch</aspectratio>
+					<height>16</height>
+					<width>68</width>
+					<posx>383</posx>
+					<posy>5</posy>
+					<info>ListItem.Rating</info>
+					<!-- <aspectratio>stretch</aspectratio> -->
 					<texture flipx="true"/>
 					<visible>Container.Sort(SongRating)</visible>
 				</control>
 			</itemlayout>
 -			<focusedlayout height="29">
 -				<control type="image">
-					<width>428</width>
+					<width>448</width>
 					<height>29</height>
 					<posx>0</posx>
 					<posy>0</posy>
@@ -97,24 +96,24 @@
 -				<control type="label">
 					<posx>30</posx>
 					<posy>3</posy>
-					<width>430</width>
+					<width>400</width>
 					<height>22</height>
 					<font>idua18</font>
 					<aligny>center</aligny>
-					<selectedcolor>green</selectedcolor>
+					<include>textcolorligreenfocus</include>
 					<align>left</align>
 					<info>ListItem.Label</info>
 					<visible>!Container.Sort(SongRating)</visible>
 				</control>
 -				<control type="label">
-					<posx>475</posx>
+					<posx>425</posx>
 					<posy>3</posy>
 					<width>300</width>
 					<height>22</height>
 					<font>idua18</font>
 					<aligny>center</aligny>
-					<selectedcolor>green</selectedcolor>
-					<textcolor>grey</textcolor>
+					<include>textcolorligreenfocus</include>
+					<include>textcolorgrey</include>
 					<align>right</align>
 					<info>ListItem.Label2</info>
 					<visible>!Container.Sort(SongRating)</visible>
@@ -126,19 +125,19 @@
 					<height>22</height>
 					<font>idua18</font>
 					<aligny>center</aligny>
-					<selectedcolor>green</selectedcolor>
+					<include>textcolorligreenfocus</include>
 					<align>left</align>
 					<info>ListItem.Label</info>
 					<visible>Container.Sort(SongRating)</visible>
 				</control>
 -				<control type="image" id="1">
 					<description>Song Rating Image</description>
-					<height>21</height>
-					<width>121</width>
-					<posx>380</posx>
-					<posy>4</posy>
-					<info>ListItem.StarRating</info>
-					<aspectratio>stretch</aspectratio>
+					<height>16</height>
+					<width>68</width>
+					<posx>383</posx>
+					<posy>5</posy>
+					<info>ListItem.Rating</info>
+					<!-- <aspectratio>stretch</aspectratio> -->
 					<texture flipx="true"/>
 					<visible>Container.Sort(SongRating)</visible>
 				</control>
@@ -586,5 +585,7 @@ Control.IsVisible(58) + !Control.IsVisible(3001)  + !Control.IsVisible(3002)
 			<visible>Control.IsVisible(58)</visible>
 			<include>contentpanelslide</include>
 		</control> -->
+		
 	</include>
+	<!-- <include>WrapOverlayMusic</include> -->
 </includes>
