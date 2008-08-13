@@ -36,6 +36,21 @@
  <animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 </control>
  
+ <control type="image" id="1000">
+			<description>Fanart background TVshow</description>
+			<posx>40</posx>
+			<posy>55</posy>
+			<width>640</width>
+			<height>466</height>
+			<aspectratio scalediffuse="false">scale</aspectratio>
+			<texture diffuse="Content_Panel_Diffuse.png" />
+			<info>Fanart.Image</info>
+			<include>contentpanelslide</include>
+			<visible>!IsEmpty(Fanart.Image) + Skin.HasSetting(ShowFanart)</visible> 
+		</control>
+		
+		
+ 
 <control>
    <description>PartyMode Enabled</description>
    <type>button</type>
