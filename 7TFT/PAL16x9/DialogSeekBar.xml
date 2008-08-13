@@ -40,7 +40,7 @@
 			<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-1" reversible="false"             condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 			<animation effect="zoom" start="100" end="0" center="360,288" reverted="false" acceleration="1" time="300" delay="200" condition="!Skin.HasSetting(Animate)">WindowClose</animation>
 		</control>
-		<control>
+		<!-- <control>
 			<description>Media Info Background Image</description>
 			<type>image</type>
 			<id>1</id>
@@ -53,13 +53,23 @@
 			<visible>Player.HasVideo + [Player.Paused]</visible>
 			<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-1" reversible="false"             condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 			<animation effect="zoom" start="100" end="0" center="360,288" reverted="false" acceleration="1" time="300" delay="200" condition="!Skin.HasSetting(Animate)">WindowClose</animation>
+		</control> -->
+		<control type="image">
+			<posx>7</posx>
+			<posy>110</posy>
+			<width>200</width>
+			<height>201</height>
+			<texture border="40">voulume-panel-bg.png</texture>
+			<visible>Player.HasVideo + [Player.Paused]</visible>
+			<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-1" reversible="false"             condition="!Skin.HasSetting(animated)">WindowOpen</animation>
+			<animation effect="zoom" start="100" end="0" center="360,288" reverted="false" acceleration="1" time="300" delay="200" condition="!Skin.HasSetting(Animate)">WindowClose</animation>
 		</control>
 		<control>
 			<description>Cover Image</description>
 			<type>image</type>
 			<id>1</id>
 			<posx>18</posx>
-			<posy>112</posy>
+			<posy>120</posy>
 			<width>180</width>
 			<height>180</height>
 			<info>VideoPlayer.Cover</info>
