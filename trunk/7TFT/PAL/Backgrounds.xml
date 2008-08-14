@@ -10,10 +10,11 @@
 			<aspectratio scalediffuse="false">scale</aspectratio>
 			<texture diffuse="Content_Panel_Diffuse.png" />
 			<info>Skin.String(VideoBackground)</info>
-			<visible>Skin.HasSetting(VideoBackground)</visible>
+			<visible>Skin.HasSetting(VideoBackground)</visible>			
 			<visible>![!IsEmpty(Fanart.Image) + Skin.HasSetting(ShowFanart)]</visible>
+			<visible>![!IsEmpty(ListItem.Property(fanart_image)) + Skin.HasSetting(ShowFanart)]</visible>
 		</control>
-	</include>
+	</include>	
 	<!-- custom  Music background  -->
 	<include name="MusicBackground">
 		<control type="image" id="0">
