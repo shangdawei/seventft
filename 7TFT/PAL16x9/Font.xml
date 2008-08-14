@@ -129,6 +129,13 @@
 			<size>22</size>
 		</font>
 		<font>
+			<name>mc360_23boldshadow</name>
+			<filename>MC360.ttf</filename>
+			<size>22</size>
+			<style>bold</style>
+			<shadow>ff222222</shadow>
+		</font>
+		<font>
 			<name>FCS21</name>
 			<filename>FCS.ttf</filename>
 			<size>20</size>

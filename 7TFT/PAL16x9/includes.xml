@@ -1653,17 +1653,20 @@
 	<include name="numberOfFiles">
 		<control>
 			<description>number of files text label</description>
-			<type>label</type>
-			<id>12</id>
-			<posx>550</posx>
-			<posy>468</posy>
-			<align>right</align>
-			<label>-</label>
-			<font>idua20</font>
-			<textcolor>98aaaaaa</textcolor>
-			<include>contentpanelslide</include>
-		</control>
+			<type>label</type>		
+			<posx>118.5</posx>
+			<posy>106</posy>
+			<width>720</width>
+			<align>right</align>		
+			<font>mc360_23boldshadow</font>
+			<textcolor>905cb901</textcolor>
+			<angle>51</angle>
+			
+		<info>Container.NumItems</info>
+				</control>
 	</include>
+		
+	
 	<include name="weather fade">
 		<animation effect="fade" delay="200" start="0" end="100" time="200" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="150" condition="!Skin.HasSetting(animated)">WindowClose</animation>
