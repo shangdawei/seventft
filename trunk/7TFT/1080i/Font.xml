@@ -46,6 +46,13 @@
 			<size>42</size>
 		</font>
 		<font>
+			<name>mc360_23boldshadow</name>
+			<filename>MC360.ttf</filename>
+			<size>42</size>
+			<style>bold</style>
+			<shadow>ff222222</shadow>
+		</font>
+		<font>
 			<name>font101</name>
 			<filename>Arial.ttf</filename>
 			<size>30</size>
