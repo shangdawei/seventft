@@ -10,7 +10,7 @@
 	</coordinates>
 	<controls>
 		<control type="image" id="0">
-			<description>Popup Kai Toast Dialog Background</description>
+			<description>Popup  Dialog Background</description>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>380</width>
@@ -129,6 +129,7 @@
 			<textcolor>ff777777</textcolor>
 			<label>$INFO[MusicPlayer.Comment]</label>			
 		</control>
+		
 		
 
 		<!-- <control type="image" id="400">
