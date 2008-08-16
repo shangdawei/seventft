@@ -1,7 +1,7 @@
 <window id="2333">
 	<defaultcontrol>122</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	 <visible>Player.HasAudio + Window.IsActive(2333)</visible> 
+	<visible>Player.HasAudio + Window.IsActive(2333)</visible> 
 	<controls>
 		<!--  Background!-->
 		<control type="image" id="1">
@@ -18,6 +18,7 @@
 			<animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation> -->
 			<animation effect="rotatey" center="1" start="180" end="360" time="1000" loop="false" acceleration="0.3" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
 			<animation effect="rotatey" center="1" start="360" end="180" time="800" loop="false" acceleration="0.4" condition="!Skin.HasSetting(animated)">WindowClose</animation>
+			<visible>Player.HasAudio</visible>
 			<control type="image" id="1">
 				<description>background media info</description>
 				<posx>0</posx>
@@ -25,6 +26,7 @@
 				<width>720</width>
 				<height>576</height>
 				<texture>bg_dialog.png</texture>
+				
 			</control>
 			<control type="image" id="0">
 				<description>contentpanel slice music background Music</description>
@@ -37,8 +39,8 @@
 				<info>Skin.String(MusicBackground)</info>
 				<visible>Skin.HasSetting(MusicBackground)</visible>
 				<visible>![!IsEmpty(Fanart.Image) + Skin.HasSetting(ShowFanart)]</visible>
-				<animation effect="rotatey" center="1" start="180" end="360" time="700" loop="false" acceleration="0.3" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
-				<animation effect="rotatey" center="1" start="360" end="180" time="600" loop="false" acceleration="0.4" condition="!Skin.HasSetting(animated)">WindowClose</animation>
+				<!-- <animation effect="rotatey" center="1" start="180" end="360" time="700" loop="false" acceleration="0.3" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
+				<animation effect="rotatey" center="1" start="360" end="180" time="600" loop="false" acceleration="0.4" condition="!Skin.HasSetting(animated)">WindowClose</animation> -->
 			</control>
 			<control>
 				<description>description label</description>
@@ -83,45 +85,45 @@
 			<control type="fadelabel" id="1">
 				<description>Artist value</description>
 				<posx>295</posx>
-				<posy>140</posy>
+				<posy>120</posy>
 				<label>$INFO[MusicPlayer.Artist]</label>
-				<width>325</width>
+				<width>311</width>
 				<height>56</height>
-				<font>alwin24</font>
+				<font>idua24</font>
 			</control>
 			<control type="fadelabel" id="1">
 				<description>Album value</description>
 				<posx>295</posx>
-				<posy>226</posy>
-				<label>$LOCALIZE[483]: $INFO[MusicPlayer.Album]</label>
+				<posy>177</posy>
+				<label>$INFO[MusicPlayer.Album]</label>
 				<width>339</width>
 				<font>idua20</font>
-				<textcolor>80ffffff</textcolor>
-				<wrapmultiline>false</wrapmultiline>
+				<textcolor>99ffffff</textcolor>
+				<!-- <wrapmultiline>false</wrapmultiline> -->
 			</control>
 			<control type="fadelabel" id="1">
 				<description>Genre value</description>
 				<posx>295</posx>
-				<posy>250</posy>
+				<posy>214</posy>
 				<label>$LOCALIZE[515]: $INFO[MusicPlayer.Genre]</label>
-				<font>idua20</font>
+				<font>alwin24</font>
 				<textcolor>80ffffff</textcolor>
 				<width>425</width>
 			</control>
 			<control type="label" id="1">
 				<description>Year value</description>
 				<posx>295</posx>
-				<posy>273</posy>
+				<posy>248</posy>
 				<label>$LOCALIZE[345]: $INFO[MusicPlayer.Year]</label>
-				<font>idua20</font>
+				<font>alwin24</font>
 				<textcolor>80ffffff</textcolor>
 			</control>
 			<control type="label" id="1">
 				<description>Tracks value</description>
 				<posx>295</posx>
-				<posy>298</posy>
-				<label>$LOCALIZE[435]: $INFO[musicplayer.Playlistposition] / $INFO[musicplayer.Playlistlength]</label>
-				<font>idua20</font>
+				<posy>282</posy>
+				<label>$LOCALIZE[435]$INFO[musicplayer.Playlistposition] / $INFO[musicplayer.Playlistlength]</label>
+				<font>alwin24</font>
 				<textcolor>80ffffff</textcolor>
 				<width>425</width>
 				<visible>!MusicPartyMode.Enabled</visible>
@@ -129,11 +131,11 @@
 			<control type="label" id="1">
 				<description>Tracks value</description>
 				<posx>295</posx>
-				<posy>298</posy>
+				<posy>282</posy>
 				<label>$LOCALIZE[589]: $INFO[musicpartymode.songsplayed] / $INFO[musicpartymode.matchingsongs] / $INFO[musicpartymode.matchingsongsleft]  / $INFO[musicpartymode.randomsongspicked]</label>
 				<textcolor>80ffffff</textcolor>
 				<width>425</width>
-				<font>idua20</font>
+				<font>alwin24</font>
 				<visible>MusicPartyMode.Enabled</visible>
 			</control>
 			<control type="image" id="1">
@@ -173,7 +175,7 @@
 				<posy>365</posy>
 				<label>$INFO[MusicPlayer.Title]</label>
 				<!-- <animation effect="rotatey" center="500" start="0" end="-360" time="8000" loop="true" condition="true">Conditional</animation> -->
-				<font>alwin24</font>
+				<font>idua24</font>
 				<width>620</width>
 			</control>
 			<control type="label" id="1">
@@ -202,7 +204,7 @@
 				<height>161</height>
 				<label>More Music Infos</label>
 				<font>alwin22</font>
-				<textcolor>ff7cfc00</textcolor>
+				<textcolor>927cfc00</textcolor>
 				<textureradionofocus>-</textureradionofocus>
 				<texturefocus>button-reunten-music-fo.png</texturefocus>
 				<texturenofocus>-</texturenofocus>
@@ -256,7 +258,7 @@
 			<label>Audio Codec: Bitrate: $INFO[MusicPlayer.Bitrate]kbps | Bits: $INFO[MusicPlayer.bitspersample]bit | Freq.: $INFO[MusicPlayer.Samplerate]kHz | Ch: $INFO[MusicPlayer.Channels]</label>
 		</control> -->
 			<!--  Logos play!-->
-			<include>UHR</include>
+			
 			<include>pseudoEqualizer</include>
 			<control>
 				<description>PartyMode Enabled</description>
@@ -272,17 +274,17 @@
 				<visible>MusicPartyMode.Enabled</visible>
 			</control>
 			<control type="image">
-				<posx>510</posx>
-				<posy>70</posy>
-				<width>72</width>
-				<height>96</height>
+				<posx>518</posx>
+				<posy>4</posy>
+				<width>48</width>
+				<height>56</height>
 				<texture>lastfm.png</texture>
 				<aspectratio align="left">keep</aspectratio>
 				<visible>Player.HasAudio + LastFM.RadioPlaying</visible>
 			</control>
 			<control type="image">
-				<posx>334</posx>
-				<posy>428</posy>
+				<posx>434</posx>
+				<posy>18</posy>
 				<width>48</width>
 				<height>56</height>
 				<texture>lastfmnotplaying.png</texture>
@@ -302,7 +304,55 @@
 				<midtexture>progress_mid-info-music.png</midtexture>
 				<righttexture>-</righttexture>
 				<overlaytexture>progress-info-music-mid.png</overlaytexture>
-				<visible>Player.HasMedia</visible>
+				
+			</control>
+			<control>
+				<description>PartyMode Enabled</description>
+				<type>button</type>
+				<id>1</id>
+				<posx>662</posx>
+				<posy>78</posy>
+				<width>32</width>
+				<height>32</height>
+				<label>-</label>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>partymodus.gif</texturenofocus>
+				<visible>MusicPartyMode.Enabled</visible>
+			</control>
+			<control>
+			<type>image</type>
+			<description>Song Rating Image</description>
+			<height>32</height>
+			<width>146</width>
+			<posx>560</posx>
+			<posy>14</posy>					
+			<info>musicplayer.rating</info>
+			<animation effect="fade" time="800">VisibleChange</animation>
+		</control>
+		<control>
+			<description>Uhr label</description>
+			<type>label</type>
+			<id>0</id>
+			<posx>0</posx>
+			<width>720</width>
+			<posy>526</posy>
+			<label>time</label>
+			<info>System.Time</info>
+			<align>center</align>
+			<font>home_red</font>
+			<textcolor>ff444444</textcolor>			
+		</control>
+		</control>
+		<control type="group" id="501">
+			<visible>!Player.HasAudio</visible>
+			
+			<control type="image" id="1">
+				<description>background media info</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>720</width>
+				<height>576</height>
+				<texture>bg_dialog.png</texture>
 			</control>
 			<control type="fadelabel" id="1">
 				<description>no title more aviable in the playlist</description>
@@ -311,10 +361,10 @@
 				<width>560</width>
 				<font>idua24</font>
 				<align>left</align>
-				<label>$LOCALIZE[41534]  $INFO[MusicPlayer.DiscNumber]</label>
-				<visible>!Player.HasMedia</visible>
+				<label>$LOCALIZE[41534]  $INFO[MusicPlayer.DiscNumber]</label>				
 			</control>
 		</control>
+
 		<!-- <control>
    <description>bg preview</description>
    <type>image</type>
