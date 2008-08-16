@@ -45,10 +45,14 @@
 	<string id="31519">General, Storage, Hard Disk, DVD-ROM, Network, Video, Hardware, About XBMC</string>
 	<string id="31520">Home, Backgrounds, Extras</string>
 
-	<string id="31530">Enable Background Animation</string>
-	<string id="31531">Enable Scroll Bars</string>
-	<string id="31532">Enable Weather Radar</string>
-	<string id="31533">Weather Script Path</string>
+	<string id="41530">Bitrate</string>
+	<string id="41531">Anzahl Playlist Titel</string>
+	<string id="41532">CD Nummer im ID3 Tag</string>
+	<string id="41533">Dieser Titel Endet um</string>
+	<string id="41534">! Keine Titel mehr in der Playlist ... Bitte mit "Back" zurück ins Hauptmenü.</string>
+	<string id="41535">Komentar</string>
+	
+	
 	<string id="31534">Set Day Background [COLOR WindowFocusText]05:00,17:00[/COLOR]</string>
 	<string id="31535">Set Night Background [COLOR WindowFocusText]17:00,05:00[/COLOR]</string>
 	<string id="31536">3rd</string>

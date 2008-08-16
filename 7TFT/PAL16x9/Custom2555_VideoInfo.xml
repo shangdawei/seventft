@@ -1,7 +1,9 @@
+<!-- <window id="2555"> -->
+
 <window type="buttonMenu" id="2555">
-	<defaultcontrol>2</defaultcontrol>
+	<defaultcontrol>222</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<visible>Player.HasVideo + Window.IsActive(2555)</visible>
+	<visible>Player.HasVideo + Window.IsActive(2555)</visible> 
 	<controls>
 		<!--  Background!-->
 		<control type="image" id="1">
