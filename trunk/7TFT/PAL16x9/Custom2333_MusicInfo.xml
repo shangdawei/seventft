@@ -283,8 +283,8 @@
 				<visible>Player.HasAudio + LastFM.RadioPlaying</visible>
 			</control>
 			<control type="image">
-				<posx>434</posx>
-				<posy>18</posy>
+				<posx>518</posx>
+				<posy>4</posy>
 				<width>48</width>
 				<height>56</height>
 				<texture>lastfmnotplaying.png</texture>
