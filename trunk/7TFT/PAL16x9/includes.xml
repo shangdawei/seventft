@@ -1654,13 +1654,13 @@
 		<control>
 			<description>number of files text label</description>
 			<type>label</type>		
-			<posx>118.5</posx>
-			<posy>106</posy>
+			<posx>570</posx>
+			<posy>81</posy>
 			<width>720</width>
 			<align>right</align>		
 			<font>mc360_23boldshadow</font>
 			<textcolor>905cb901</textcolor>
-			<angle>51</angle>
+			<!-- <angle>51</angle> -->
 			
 		<info>Container.NumItems</info>
 				</control>

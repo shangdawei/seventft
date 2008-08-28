@@ -201,6 +201,11 @@
 			<size>42</size>
 		</font>
 		<font>
+			<name>idua22</name>
+			<filename>idua.ttf</filename>
+			<size>38</size>
+		</font>
+		<font>
 			<name>idua18</name>
 			<filename>idua.ttf</filename>
 			<size>32</size>
