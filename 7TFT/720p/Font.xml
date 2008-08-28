@@ -48,7 +48,7 @@
 		<font>
 			<name>mc360_23boldshadow</name>
 			<filename>MC360.ttf</filename>
-			<size>38</size>
+			<size>32</size>
 			<style>bold</style>
 			<shadow>ff222222</shadow>
 		</font>
@@ -198,6 +198,11 @@
 			<name>idua24</name>
 			<filename>idua.ttf</filename>
 			<size>34</size>
+		</font>
+		<font>
+			<name>idua22</name>
+			<filename>idua.ttf</filename>
+			<size>30</size>
 		</font>
 		<font>
 			<name>idua18</name>
