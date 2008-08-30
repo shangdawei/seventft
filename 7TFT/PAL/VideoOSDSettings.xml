@@ -92,10 +92,10 @@
 			<width>300</width>
 			<texturefocus>list-focus.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
-			<textureup>scroll-up.png</textureup>
-			<texturedown>scroll-down.png</texturedown>
-			<textureupfocus>scroll-up-focus.png</textureupfocus>
-			<texturedownfocus>scroll-down-focus.png</texturedownfocus>
+			<textureup>uup.png</textureup>
+			<texturedown>ddown.png</texturedown>
+			<textureupfocus>uupfo.png</textureupfocus>
+			<texturedownfocus>ddownfo.png</texturedownfocus>
 			<font>idua18</font>
 			<textcolor>white</textcolor>
 			<disabledcolor>disabled</disabledcolor>
