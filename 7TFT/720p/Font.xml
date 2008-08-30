@@ -51,6 +51,7 @@
 			<size>32</size>
 			<style>bold</style>
 			<shadow>ff222222</shadow>
+			<aspect>1.20</aspect>
 		</font>
 		<font>
 			<name>font101</name>

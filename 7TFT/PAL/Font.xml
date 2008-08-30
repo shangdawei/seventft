@@ -125,22 +125,16 @@
 		<font>
 			<name>mc360_23boldshadow</name>
 			<filename>MC360.ttf</filename>
-			<size>22</size>
+			<size>24</size>
 			<style>bold</style>
 			<shadow>ff222222</shadow>
+			<aspect>1.20</aspect>
 		</font>
 		<font>
 			<name>FCS21</name>
 			<filename>FCS.ttf</filename>
 			<size>20</size>
 		</font>
-
-
-
-
-
-
-
 		<font>
 			<name>font101</name>
 			<filename>Arial.ttf</filename>

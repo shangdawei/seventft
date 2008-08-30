@@ -131,9 +131,10 @@
 		<font>
 			<name>mc360_23boldshadow</name>
 			<filename>MC360.ttf</filename>
-			<size>22</size>
+			<size>24</size>
 			<style>bold</style>
 			<shadow>ff222222</shadow>
+			<aspect>1.20</aspect>
 		</font>
 		<font>
 			<name>FCS21</name>
@@ -152,6 +153,7 @@
 			<size>30</size>
 			<style>bold</style>
 			<shadow>ff000000</shadow>
+			<aspect>1.20</aspect>
 		</font>
 		<font>
 			<name>alwin34italic</name>
