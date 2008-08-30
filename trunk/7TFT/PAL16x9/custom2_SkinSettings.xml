@@ -158,7 +158,7 @@
 					<texturefocus>list-focus.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
-				<control type="radiobutton" id="121">
+				<!-- <control type="radiobutton" id="121">
 					<description>enable tween animations</description>
 					<width>485</width>
 					<label>21399</label>
@@ -168,14 +168,15 @@
 					<textoffsetx>7</textoffsetx>
 					<texturefocus>list-focus.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<enable>!Skin.HasSetting(animated)</enable>
-				</control>
+					<enable>!Skin.HasSetting(animated)</enable> 
+				</control> -->
 				<control type="image" id="122">
 					<width>510</width>
 					<height>5</height>
 					<texture>separator.png</texture>
 				</control>
-				<control type="radiobutton" id="124">
+				
+				<control type="radiobutton" id="123">
 					<description>QWERTY Keyboard Button</description>
 					<width>485</width>
 					<label>QWERTY $LOCALIZE[15028]</label>
@@ -186,7 +187,7 @@
 					<texturefocus>list-focus.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
-				<control type="radiobutton" id="125">
+				<control type="radiobutton" id="124">
 					<description>make watched filtering a toggle in video library Button</description>
 					<width>485</width>
 					<label>21384</label>
@@ -198,22 +199,23 @@
 					<texturenofocus>-</texturenofocus>
 					<scroll>true</scroll>
 				</control>
-				<control type="image" id="126">
+				<control type="image" id="125">
 					<width>510</width>
 					<height>5</height>
 					<texture>separator.png</texture>
 				</control>
-				<control type="radiobutton" id="127">
+				<control type="radiobutton" id="126">
 					<description>Enable Playlist Toggle</description>
 					<width>485</width>
 					<label>21398</label>
+					<font>idua18</font>
 					<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 					<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
 					<textoffsetx>7</textoffsetx>
 					<texturefocus>list-focus.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
-				<control type="button" id="128">
+				<control type="button" id="127">
 					<description>Startup Playlist Path</description>
 					<width>485</width>
 					<label>15311</label>
@@ -225,7 +227,7 @@
 					<texturenofocus>-</texturenofocus>
 					<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
 				</control>
-				<control type="image" id="129">
+				<control type="image" id="128">
 					<width>510</width>
 					<height>5</height>
 					<texture>separator.png</texture>

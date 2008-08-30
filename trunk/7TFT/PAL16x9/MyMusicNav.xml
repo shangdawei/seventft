@@ -18,7 +18,10 @@
   </control>
 
 <include>MusicBackground</include>
-<include>numberOfFiles</include>
+<control type="label">									
+					<textcolor>975cb901</textcolor>
+					<include>numberOfFiles</include>
+				</control>
 
 
   <control>
@@ -427,8 +430,8 @@
   <height>380</height>
   <spinwidth>18</spinwidth>
   <spinheight>16</spinheight>
-  <spinposx>360</spinposx>
-  <spinposy>342</spinposy>
+  <spinposx>370</spinposx>
+  <spinposy>302</spinposy>
   <spincolor>ff777777</spincolor>
   <spinfont>idua22</spinfont>   
   <textureup>uup.png</textureup>
@@ -477,8 +480,8 @@
    <height>380</height>
    <spinwidth>18</spinwidth>
   <spinheight>16</spinheight>
-  <spinposx>360</spinposx>
-  <spinposy>342</spinposy>
+  <spinposx>370</spinposx>
+  <spinposy>322</spinposy>
   <spincolor>ff777777</spincolor>
   <spinfont>idua22</spinfont>   
   <textureup>uup.png</textureup>

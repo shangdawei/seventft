@@ -158,7 +158,7 @@
 					<texturefocus>list-focus.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 				</control>
-				<control type="radiobutton" id="121">
+				<!-- <control type="radiobutton" id="121">
 					<description>enable tween animations</description>
 					<width>485</width>
 					<label>21399</label>
@@ -169,7 +169,7 @@
 					<texturefocus>list-focus.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<enable>!Skin.HasSetting(animated)</enable>
-				</control>
+				</control> -->
 				<control type="image" id="122">
 					<width>510</width>
 					<height>5</height>
@@ -207,6 +207,7 @@
 					<description>Enable Playlist Toggle</description>
 					<width>485</width>
 					<label>21398</label>
+					<font>idua18</font>
 					<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 					<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
 					<textoffsetx>7</textoffsetx>

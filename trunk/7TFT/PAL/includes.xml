@@ -1845,20 +1845,17 @@
 	</include>		
   
 <!-- WrapOverlay   Music,  Video,  Picture,  Programms,   Gamesaves and Scripts----------56--57---- E N D ------------------------------------ -->
-<include name="numberOfFiles">
-<control>
-   <description>number of files text label</description>
-   <type>label</type>
-   <id>12</id>
-   <posx>550</posx>
-   <posy>468</posy>
-   <align>right</align>
-   <label>-</label>
-   <font>idua20</font>
-   <textcolor>98aaaaaa</textcolor> 
-      <include>contentpanelslide</include>
-  </control>
-</include>
+<include name="numberOfFiles">		
+			<description>number of files text label</description>
+			<!-- <type>label</type> -->		
+			<posx>576</posx>
+			<posy>85</posy>
+			<width>720</width>
+			<align>right</align>		
+			<font>mc360_23boldshadow</font>			
+			<!-- <angle>51</angle> -->			
+		<info>Container.NumItems</info>				
+	</include>
 
  <include name="weather fade">
    <animation effect="fade" delay="200" start="0" end="100" time="200" condition="!Skin.HasSetting(animated)">WindowOpen</animation>

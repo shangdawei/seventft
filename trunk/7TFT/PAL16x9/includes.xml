@@ -1650,20 +1650,16 @@
 		</control>
 	</include>
 	<!-- WrapOverlay   Music,  Video,  Picture,  Programms,   Gamesaves and Scripts 			E N D -->
-	<include name="numberOfFiles">
-		<control>
+	<include name="numberOfFiles">		
 			<description>number of files text label</description>
-			<type>label</type>		
-			<posx>570</posx>
-			<posy>81</posy>
+			<!-- <type>label</type> -->		
+			<posx>576</posx>
+			<posy>85</posy>
 			<width>720</width>
 			<align>right</align>		
-			<font>mc360_23boldshadow</font>
-			<textcolor>905cb901</textcolor>
-			<!-- <angle>51</angle> -->
-			
-		<info>Container.NumItems</info>
-				</control>
+			<font>mc360_23boldshadow</font>			
+			<!-- <angle>51</angle> -->			
+		<info>Container.NumItems</info>				
 	</include>
 		
 	

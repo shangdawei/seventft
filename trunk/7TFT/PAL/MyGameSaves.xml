@@ -11,6 +11,10 @@
 			<texture>bg_programms.png</texture>
 		</control>
 		<include>ProgramsBackground</include>
+		<control type="label">									
+			<textcolor>97CC59CC</textcolor>
+			<include>numberOfFiles</include>
+		</control>
 		<control>
 			<description>description label</description>
 			<type>label</type>
@@ -37,18 +41,7 @@
 			<texturenofocus>partymodus.gif</texturenofocus>
 			<visible>MusicPartyMode.Enabled</visible>
 		</control>
-		<control>
-			<description>number of files text label</description>
-			<type>label</type>
-			<id>12</id>
-			<posx>550</posx>
-			<posy>468</posy>
-			<align>right</align>
-			<label>-</label>
-			<font>idua18</font>
-			<textcolor>60aaaaaa</textcolor>
-			<include>contentpanelslide</include>
-		</control>
+
 		<controlgroup>
 			<control>
 				<description>separator image</description>
@@ -155,16 +148,16 @@
 			<height>361</height>
 			<spinwidth>18</spinwidth>
 			<spinheight>16</spinheight>
-			<spinposx>404</spinposx>
-			<spinposy>-40</spinposy>
-			<spincolor>90cccccc</spincolor>
-			<spinfont>idua20</spinfont>
-			<textureup>scroll-up_mmi.png</textureup>
-			<texturedown>scroll-down_mmi.png</texturedown>
-			<textureupfocus>scroll-up-focus_mmi.png</textureupfocus>
-			<texturedownfocus>scroll-down-focus_mmi.png</texturedownfocus>
+			<spinposx>360</spinposx>
+			<spinposy>342</spinposy>
+			<spincolor>ff777777</spincolor>
+			<spinfont>idua22</spinfont>   
+			<textureup>uup.png</textureup>
+			<texturedown>ddown.png</texturedown>
+			<textureupfocus>uupfo.png</textureupfocus>
+			<texturedownfocus>ddownfo.png</texturedownfocus>
 			<texturefocus>list-focus.png</texturefocus>
-			<texturenofocus>list-nofocus.png</texturenofocus>
+			<texturenofocus>list-nofocus.png</texturenofocus>			
 			<image>icon-folder.png</image>
 			<textureheight>34</textureheight>
 			<font>idua20</font>
@@ -192,14 +185,14 @@
 			<height>380</height>
 			<spinwidth>18</spinwidth>
 			<spinheight>16</spinheight>
-			<spinposx>414</spinposx>
-			<spinposy>-80</spinposy>
-			<spincolor>90cccccc</spincolor>
-			<spinfont>idua20</spinfont>
-			<textureup>scroll-up_mmi.png</textureup>
-			<texturedown>scroll-down_mmi.png</texturedown>
-			<textureupfocus>scroll-up-focus_mmi.png</textureupfocus>
-			<texturedownfocus>scroll-down-focus_mmi.png</texturedownfocus>
+			<spinposx>370</spinposx>
+			<spinposy>302</spinposy>
+			<spincolor>ff777777</spincolor>
+			<spinfont>idua22</spinfont>   
+			<textureup>uup.png</textureup>
+			<texturedown>ddown.png</texturedown>
+			<textureupfocus>uupfo.png</textureupfocus>
+			<texturedownfocus>ddownfo.png</texturedownfocus>
 			<itemwidth>115</itemwidth>
 			<itemheight>130</itemheight>
 			<texturewidth>92</texturewidth>
@@ -240,17 +233,17 @@
 			<height>380</height>
 			<spinwidth>18</spinwidth>
 			<spinheight>16</spinheight>
-			<spinposx>414</spinposx>
-			<spinposy>-60</spinposy>
-			<spincolor>90cccccc</spincolor>
-			<spinfont>idua20</spinfont>
-			<textureup>scroll-up_mmi.png</textureup>
-			<texturedown>scroll-down_mmi.png</texturedown>
-			<textureupfocus>scroll-up-focus_mmi.png</textureupfocus>
-			<texturedownfocus>scroll-down-focus_mmi.png</texturedownfocus>
+			<spinposx>370</spinposx>
+			<spinposy>322</spinposy>
+			<spincolor>ff777777</spincolor>
+			<spinfont>idua22</spinfont>   
+			<textureup>uup.png</textureup>
+			<texturedown>ddown.png</texturedown>
+			<textureupfocus>uupfo.png</textureupfocus>
+			<texturedownfocus>ddownfo.png</texturedownfocus>
 			<texturefocus>blue-rectangle.png</texturefocus>
 			<texturenofocus>blue-rectangleNF.png</texturenofocus>
-			<font>alwin24</font>
+			<font>idua20</font>
 			<font2>idua20</font2>
 			<include>listselectedcolor</include>
 			<include>textcolorlightgrey</include>
