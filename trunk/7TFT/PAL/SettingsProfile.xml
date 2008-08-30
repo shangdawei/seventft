@@ -108,12 +108,12 @@
   <spinposy>356</spinposy>
   <spincolor>90cccccc</spincolor>
   <spinfont>idua20</spinfont>
-  <textureup>scroll-up_mmi.png</textureup>
-  <texturedown>scroll-down_mmi.png</texturedown>
-  <textureupfocus>scroll-up-focus_mmi.png</textureupfocus>
-  <texturedownfocus>scroll-down-focus_mmi.png</texturedownfocus>
-  <texturefocus>list-focus.png</texturefocus>
-  <texturenofocus>list-nofocus.png</texturenofocus>
+  <textureup>uup.png</textureup>
+			<texturedown>ddown.png</texturedown>
+			<textureupfocus>uupfo.png</textureupfocus>
+			<texturedownfocus>ddownfo.png</texturedownfocus>
+			<texturefocus>list-focus.png</texturefocus>
+			<texturenofocus>list-nofocus.png</texturenofocus>
   <image>icon-folder.png</image>
   <textureheight>30</textureheight>
   <font>idua20</font>
