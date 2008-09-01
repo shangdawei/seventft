@@ -183,7 +183,7 @@
    <label>-</label>
    <font>-</font>
    <onleft>4</onleft>
-   <onright>16</onright>
+   <onright>208</onright>
    <onup>16</onup>
    <ondown>4</ondown>
   </control>
@@ -478,7 +478,7 @@
    <label>-</label>
    <font>-</font>
    <onleft>4</onleft>
-   <onright>16</onright>
+   <onright>208</onright>
    <onup>16</onup>
    <ondown>4</ondown>
   </control>
@@ -598,6 +598,42 @@
 				<visible>Control.HasFocus(18)</visible>
 				<animation effect="rotate" start="-180" end="-135" center="auto" time="101">Visible</animation>
 			</control>
+			
+			<control type="button" id="208">
+			<description>DVD menu button</description>
+			<posx>670</posx>
+			<posy>252</posy>
+			<width>64</width>
+			<height>82</height>
+			<texturefocus>osd_button_dvdmenu.png</texturefocus>
+			<texturenofocus>osd_button_dvdmenuNF.png</texturenofocus>
+			<label>-</label>
+			<font>-</font>
+			<onleft>15</onleft>
+			<onright>15</onright>
+			<onup>18</onup>
+			<ondown>18</ondown>
+			<alignx>right</alignx>
+			<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+			<!-- <visible>VideoPlayer.HasMenu</visible> -->
+		</control>
+		<!-- <control type="button" id="209">
+			<description>DVD menu button 2</description>
+			<posx>35</posx>
+			<posy>304</posy>
+			<width>128</width>
+			<height>163</height>
+			<texturefocus>osd_button_dvdmenu2.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<label>-</label>
+			<font>-</font>
+			<onleft>211</onleft>
+			<onright>921</onright>
+			<onup>921</onup>
+			<ondown>211</ondown>
+			<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+			<visible>VideoPlayer.HasMenu</visible>
+		</control> -->
 			
 			
 			<!----- Ring 2 ----
