@@ -1,6 +1,9 @@
 <window id="56">
 	<defaultcontrol always="true">11</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+		<!-- <include>skinsettingsbgbg</include>  -->
+	<animation effect="rotatey" center="1" start="180" end="360" time="1000" loop="false" acceleration="0.3" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
+	<animation effect="rotatey" center="720" start="360" end="540" time="800" loop="false" acceleration="0.4" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 	<coordinates>
 		<posx>0</posx>
 		<posy>0</posy>
@@ -25,7 +28,6 @@
 			<font>home_red</font>
 			<textcolor>ff444444</textcolor>
 		</control>
-
 		<control type="label" id="1">
 			<description>description label skin setup</description>
 			<posx>355</posx>
@@ -34,13 +36,10 @@
 			<label>SKIN-SETUP</label>
 			<font>eth24</font>
 			<textcolor>ff33A3CC</textcolor>
-			<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-0.8" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
-			<animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 		</control>
 		<control type="group" id="9001">
 			<posx>-30</posx>
 			<posy>80</posy>
-
 			<control type="button" id="11">
 				<description>General Settings</description>
 				<posx>30</posx>
@@ -61,10 +60,7 @@
 				<onright>9002</onright>
 				<onup>14</onup>
 				<ondown>13</ondown>
-				<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-0.8" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
-				<animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 			</control>
-			
 			<control type="button" id="12">
 				<description>Home Settings</description>
 				<posx>641</posx>
@@ -85,8 +81,6 @@
 				<onright>9003</onright>
 				<onup>13</onup>
 				<ondown>14</ondown>
-				<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-0.8" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
-				<animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 			</control>
 			<control type="button" id="13">
 				<description>costum background Settings</description>
@@ -109,8 +103,6 @@
 				<onright>9006</onright>
 				<onup>11</onup>
 				<ondown>12</ondown>
-				<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-0.8" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
-				<animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 			</control>
 			<control type="button" id="14">
 				<description>Custom Settings</description>
@@ -132,13 +124,11 @@
 				<onright>9005</onright>
 				<onup>12</onup>
 				<ondown>11</ondown>
-				<animation effect="zoom" start="1" center="360,280" time="400" acceleration="-0.8" reversible="false" condition="!Skin.HasSetting(animated)">WindowOpen</animation>
-				<animation effect="fade" time="200" condition="!Skin.HasSetting(animated)">WindowClose</animation>
 			</control>
 		</control>
 		<!-- Global Options -->
 		<control type="group">
-			<include>contentpanelslide</include>
+			<!-- <include>contentpanelslide</include> -->
 			<control type="grouplist" id="9002">
 				<posx>116</posx>
 				<posy>140</posy>
@@ -168,14 +158,13 @@
 					<textoffsetx>7</textoffsetx>
 					<texturefocus>list-focus.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
-					<enable>!Skin.HasSetting(animated)</enable> 
+					<enable>!Skin.HasSetting(animated)</enable>
 				</control> -->
 				<control type="image" id="122">
 					<width>510</width>
 					<height>5</height>
 					<texture>separator.png</texture>
 				</control>
-				
 				<control type="radiobutton" id="123">
 					<description>QWERTY Keyboard Button</description>
 					<width>485</width>
@@ -396,13 +385,12 @@
 					<texturenofocus>-</texturenofocus>
 					<font>idua18</font>
 				</control>
-
 				<control type="radiobutton" id="43">
 					<description>Enable Scroll Bars</description>
 					<width>485</width>
 					<label>Enable Scroll Bar</label>
 					<selected>Skin.HasSetting(ScrollBars)</selected>
-					<onclick>Skin.ToggleSetting(ScrollBars)</onclick>				
+					<onclick>Skin.ToggleSetting(ScrollBars)</onclick>
 					<textoffsetx>7</textoffsetx>
 					<texturefocus>list-focus.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
@@ -412,13 +400,12 @@
 					<description>reset skin</description>
 					<width>485</width>
 					<label>Reset settings</label>
-					<onclick>XBMC.ActivateWindow(8155)</onclick>				
+					<onclick>XBMC.ActivateWindow(8155)</onclick>
 					<textoffsetx>7</textoffsetx>
 					<texturefocus>list-focus.png</texturefocus>
 					<texturenofocus>-</texturenofocus>
 					<font>idua18</font>
 				</control>
-
 			</control>
 			<!-- Background Options -->
 			<control type="group" id="9006">
@@ -439,7 +426,7 @@
 					<posy>381</posy>
 					<width>510</width>
 					<height>4</height>
-					<include>contentpanelslide</include>
+					<!-- <include>contentpanelslide</include> -->
 					<texture>separator.png</texture>
 				</control>
 				<control type="radiobutton" id="1020">
@@ -496,7 +483,7 @@
 					<posy>466</posy>
 					<width>510</width>
 					<height>4</height>
-					<include>contentpanelslide</include>
+					<!-- <include>contentpanelslide</include> -->
 					<texture>separator.png</texture>
 				</control>
 				<control type="radiobutton" id="1030">
@@ -553,7 +540,7 @@
 					<posy>546</posy>
 					<width>510</width>
 					<height>4</height>
-					<include>contentpanelslide</include>
+					<!-- <include>contentpanelslide</include> -->
 					<texture>separator.png</texture>
 				</control>
 				<control type="radiobutton" id="1040">
@@ -610,7 +597,7 @@
 					<posy>626</posy>
 					<width>510</width>
 					<height>4</height>
-					<include>contentpanelslide</include>
+					<!-- <include>contentpanelslide</include> -->
 					<texture>separator.png</texture>
 				</control>
 				<control type="radiobutton" id="1050">
@@ -712,7 +699,7 @@
 				</control>
 			</control>
 		</control>
-
-		<include>windowswitchtransition</include>
+	
+		<!-- <include>windowswitchtransition</include> -->
 	</controls>
 </window>
