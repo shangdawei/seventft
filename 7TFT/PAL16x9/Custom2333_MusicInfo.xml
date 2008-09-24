@@ -54,7 +54,7 @@
 				<textcolor>907cfc00</textcolor>
 			</control>
 			<!--  Music Informationen!-->
-			<control type="image" id="1">
+			<!-- <control type="image" id="1">
 				<description>Album cover</description>
 				<posx>142</posx>
 				<posy>138</posy>
@@ -72,7 +72,26 @@
 				<height>200</height>
 				<texture>case.png</texture>
 				<animation effect="rotatey" center="200" start="0" end="-360" time="3000" loop="true" condition="true">Conditional</animation>
-			</control>
+			</control> -->
+			<control type="image" id="1">
+			<description>Album cover</description>
+			<posx>142</posx>
+			<posy>138</posy>
+			<width>123</width>
+			<height>177</height>
+			<info>MusicPlayer.Cover</info>
+			<aspectratio>stretch</aspectratio>
+			<animation effect="rotatey" center="200" start="0" end="-360" time="3000" loop="true" condition="true">Conditional</animation>
+		</control>
+		<control type="image" id="1">
+			<description>Album no cover</description>
+			<posx>120</posx>
+			<posy>130</posy>
+			<width>155</width>
+			<height>200</height>
+			<texture>case.png</texture>
+			<animation effect="rotatey" center="200" start="0" end="-360" time="3000" loop="true" condition="true">Conditional</animation>
+		</control>
 			<!-- <control type="label" id="1">
 			<description>Random Status</description>
 			<posx>706</posx>
